@@ -1,0 +1,6 @@
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 protobuf files to /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-java,/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mprotoc options:[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling schema /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/protobuf/login_service.proto[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling protobuf[0m
+[0m[[0m[0minfo[0m] [0m[0mProtoc target directory: /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-java[0m
+[0m[[0m[0minfo[0m] [0m[0mProtoc target directory: /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala[0m

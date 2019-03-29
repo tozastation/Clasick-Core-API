@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "tozastation.clasick.loginservice.grpc";
+option java_outer_classname = "LoginServiceProto";
+
+package login;
+
+service LoginService {
+    rpc SignIn(RequestSignIn) returns (ResponseSignIn) {};
+    rpc SignUp(RequestSignUp) returns (ResponseSignUp) {};
+}
+
+// Result: レスポンスの結果
+enum Result {
+    SUCCESS = 0;
+    FAILED = 1;
+}
+
+message RequestSignIn {
+    string user_id = 1;
+    string password = 2;
+}
+
+message ResponseSignIn {
+    string access_token = 1;
+    Result result = 2;
+}
+
+message RequestSignUp {
+    string user_id = 1;
+    string password = 2;
+    Result result = 3;
+}
+
+message ResponseSignUp {
+    string access_token = 1;
+    Result result = 2;
+}

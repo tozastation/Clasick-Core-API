@@ -1,0 +1,145 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:4:30: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  val METHOD_SIGN_IN: _root_.io.grpc.MethodDescriptor[tozastation.clasick.loginservice.grpc.login_service.RequestSignIn, tozastation.clasick.loginservice.grpc.login_service.ResponseSignIn] =[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:5:12: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m    _root_.io.grpc.MethodDescriptor.newBuilder()[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:6:23: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m      .setType(_root_.io.grpc.MethodDescriptor.MethodType.UNARY)[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:7:33: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m      .setFullMethodName(_root_.io.grpc.MethodDescriptor.generateFullMethodName("LoginService", "SignIn"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:9:44: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      .setRequestMarshaller(_root_.scalapb.grpc.Marshaller.forMessage[tozastation.clasick.loginservice.grpc.login_service.RequestSignIn])[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:10:45: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      .setResponseMarshaller(_root_.scalapb.grpc.Marshaller.forMessage[tozastation.clasick.loginservice.grpc.login_service.ResponseSignIn])[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:13:30: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  val METHOD_SIGN_UP: _root_.io.grpc.MethodDescriptor[tozastation.clasick.loginservice.grpc.login_service.RequestSignUp, tozastation.clasick.loginservice.grpc.login_service.ResponseSignUp] =[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:14:12: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m    _root_.io.grpc.MethodDescriptor.newBuilder()[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:15:23: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m      .setType(_root_.io.grpc.MethodDescriptor.MethodType.UNARY)[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:16:33: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m      .setFullMethodName(_root_.io.grpc.MethodDescriptor.generateFullMethodName("LoginService", "SignUp"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:18:44: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      .setRequestMarshaller(_root_.scalapb.grpc.Marshaller.forMessage[tozastation.clasick.loginservice.grpc.login_service.RequestSignUp])[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:19:45: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      .setResponseMarshaller(_root_.scalapb.grpc.Marshaller.forMessage[tozastation.clasick.loginservice.grpc.login_service.ResponseSignUp])[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:22:23: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  val SERVICE: _root_.io.grpc.ServiceDescriptor =[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:23:12: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m    _root_.io.grpc.ServiceDescriptor.newBuilder("LoginService")[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:24:47: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      .setSchemaDescriptor(new _root_.scalapb.grpc.ConcreteProtoFileDescriptorSupplier(tozastation.clasick.loginservice.grpc.login_service.LoginServiceProto.javaDescriptor))[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:29:45: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m  trait LoginService extends _root_.scalapb.grpc.AbstractService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:35:46: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m  object LoginService extends _root_.scalapb.grpc.ServiceCompanion[LoginService] {[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:36:51: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit def serviceCompanion: _root_.scalapb.grpc.ServiceCompanion[LoginService] = this[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:47:156: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceBlockingStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceBlockingStub](channel, options) with LoginServiceBlockingClient {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:47:50: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceBlockingStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceBlockingStub](channel, options) with LoginServiceBlockingClient {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:47:83: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceBlockingStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceBlockingStub](channel, options) with LoginServiceBlockingClient {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:47:112: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceBlockingStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceBlockingStub](channel, options) with LoginServiceBlockingClient {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:47:208: no arguments allowed for nullary constructor Object: ()Object[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceBlockingStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceBlockingStub](channel, options) with LoginServiceBlockingClient {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:49:22: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.scalapb.grpc.ClientCalls.blockingUnaryCall(channel, METHOD_SIGN_IN, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:53:22: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.scalapb.grpc.ClientCalls.blockingUnaryCall(channel, METHOD_SIGN_UP, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:56:40: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m    override def build(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): LoginServiceBlockingStub = new LoginServiceBlockingStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:56:73: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m    override def build(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): LoginServiceBlockingStub = new LoginServiceBlockingStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:59:148: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceStub](channel, options) with LoginService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:59:42: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceStub](channel, options) with LoginService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:59:75: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceStub](channel, options) with LoginService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:59:104: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceStub](channel, options) with LoginService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:59:192: no arguments allowed for nullary constructor Object: ()Object[0m
+[0m[[0m[31merror[0m] [0m[0m  class LoginServiceStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[LoginServiceStub](channel, options) with LoginService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:61:22: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.scalapb.grpc.ClientCalls.asyncUnaryCall(channel, METHOD_SIGN_IN, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:65:22: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.scalapb.grpc.ClientCalls.asyncUnaryCall(channel, METHOD_SIGN_UP, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:68:40: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m    override def build(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): LoginServiceStub = new LoginServiceStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:68:73: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m    override def build(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): LoginServiceStub = new LoginServiceStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:71:107: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  def bindService(serviceImpl: LoginService, executionContext: scala.concurrent.ExecutionContext): _root_.io.grpc.ServerServiceDefinition =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:72:12: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m    _root_.io.grpc.ServerServiceDefinition.builder(SERVICE)[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:75:14: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.io.grpc.stub.ServerCalls.asyncUnaryCall(new _root_.io.grpc.stub.ServerCalls.UnaryMethod[tozastation.clasick.loginservice.grpc.login_service.RequestSignIn, tozastation.clasick.loginservice.grpc.login_service.ResponseSignIn] {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:75:65: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.io.grpc.stub.ServerCalls.asyncUnaryCall(new _root_.io.grpc.stub.ServerCalls.UnaryMethod[tozastation.clasick.loginservice.grpc.login_service.RequestSignIn, tozastation.clasick.loginservice.grpc.login_service.ResponseSignIn] {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:76:122: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m        override def invoke(request: tozastation.clasick.loginservice.grpc.login_service.RequestSignIn, observer: _root_.io.grpc.stub.StreamObserver[tozastation.clasick.loginservice.grpc.login_service.ResponseSignIn]): Unit =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:77:58: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m          serviceImpl.signIn(request).onComplete(scalapb.grpc.Grpc.completeObserver(observer))([0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:82:14: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.io.grpc.stub.ServerCalls.asyncUnaryCall(new _root_.io.grpc.stub.ServerCalls.UnaryMethod[tozastation.clasick.loginservice.grpc.login_service.RequestSignUp, tozastation.clasick.loginservice.grpc.login_service.ResponseSignUp] {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:82:65: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.io.grpc.stub.ServerCalls.asyncUnaryCall(new _root_.io.grpc.stub.ServerCalls.UnaryMethod[tozastation.clasick.loginservice.grpc.login_service.RequestSignUp, tozastation.clasick.loginservice.grpc.login_service.ResponseSignUp] {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:83:122: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m        override def invoke(request: tozastation.clasick.loginservice.grpc.login_service.RequestSignUp, observer: _root_.io.grpc.stub.StreamObserver[tozastation.clasick.loginservice.grpc.login_service.ResponseSignUp]): Unit =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:84:58: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m          serviceImpl.signUp(request).onComplete(scalapb.grpc.Grpc.completeObserver(observer))([0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:89:36: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  def blockingStub(channel: _root_.io.grpc.Channel): LoginServiceBlockingStub = new LoginServiceBlockingStub(channel)[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala:91:28: object io is not a member of package <root>[0m
+[0m[[0m[31merror[0m] [0m[0m  def stub(channel: _root_.io.grpc.Channel): LoginServiceStub = new LoginServiceStub(channel)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m48 errors found[0m
