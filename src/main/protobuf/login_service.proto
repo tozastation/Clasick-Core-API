@@ -1,14 +1,16 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "tozastation.clasick.loginservice.grpc";
-option java_outer_classname = "LoginServiceProto";
+option java_package = "com.github.tozastation.clasickcoreapi.grpc";
+option java_outer_classname = "UserProto";
 
-package login;
+package user;
 
-service LoginService {
-    rpc SignIn(RequestSignIn) returns (ResponseSignIn) {};
-    rpc SignUp(RequestSignUp) returns (ResponseSignUp) {};
+service UserService {
+    rpc SignIn (RequestSignIn) returns (ResponseSignIn) {};
+    rpc SignUp (RequestSignUp) returns (ResponseSignUp) {};
+    rpc GetSingleUser (RequestGetSingleUser) returns (ResponseGetSingleUser) {
+    };
 }
 
 // Result: レスポンスの結果
@@ -18,7 +20,7 @@ enum Result {
 }
 
 message RequestSignIn {
-    string user_id = 1;
+    string user_name = 1;
     string password = 2;
 }
 
@@ -28,12 +30,25 @@ message ResponseSignIn {
 }
 
 message RequestSignUp {
-    string user_id = 1;
+    string user_name = 1;
     string password = 2;
     Result result = 3;
 }
 
 message ResponseSignUp {
     string access_token = 1;
+    Result result = 2;
+}
+
+message ResponseUser {
+    int32 user_id = 1;
+    string user_name = 2;
+}
+message RequestGetSingleUser {
+    int32 user_id = 1;
+}
+
+message ResponseGetSingleUser {
+    ResponseUser user = 1;
     Result result = 2;
 }
