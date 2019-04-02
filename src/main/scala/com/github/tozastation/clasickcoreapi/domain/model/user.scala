@@ -32,7 +32,8 @@ case class Contact(
 
 /**
   * AccessToken アクセストークンJWT
-  * @param value
+  *
+  * @param value アクセストークン
   */
 case class AccessToken(value: String) extends MappedTo[String]
 
@@ -61,3 +62,5 @@ class Users(tag: Tag) extends Table[User](tag, "user") {
   def accessToken = column[AccessToken]("access_token")
   def * = (id, name, pass, contact, accessToken) <> (User.tupled, User.unapply)
 }
+
+object Users extends TableQuery(new Users(_))
