@@ -6,7 +6,7 @@ option java_outer_classname = "UserProto";
 
 package user;
 
-service UserService {
+service UserRpc {
     rpc SignIn (RequestSignIn) returns (ResponseSignIn) {};
     rpc SignUp (RequestSignUp) returns (ResponseSignUp) {};
     rpc GetSingleUser (RequestGetSingleUser) returns (ResponseGetSingleUser) {

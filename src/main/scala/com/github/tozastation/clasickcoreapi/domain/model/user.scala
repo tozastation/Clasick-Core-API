@@ -1,6 +1,7 @@
 package com.github.tozastation.clasickcoreapi.domain.model
 
-import slick.driver.MySQLDriver.api._
+import slick.jdbc.MySQLProfile.api._
+import slick.lifted.MappedTo
 
 /**
   * UserId

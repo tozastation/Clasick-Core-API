@@ -1,7 +1,7 @@
 package com.github.tozastation.clasickcoreapi.domain.service
 
 import com.github.tozastation.clasickcoreapi.domain.model._
-import com.github.tozastation.clasickcoreapi.grpc.login_service._
+import com.github.tozastation.clasickcoreapi.grpc.user_rpc._
 import com.github.tozastation.clasickcoreapi.infrastructure.persistence.repository.MixInUserRepository
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
