@@ -12,7 +12,7 @@ import scala.concurrent.Future
   * UserRepositoryの実装を提供するただ一つのフィールドを持つモジュール
   */
 trait MixInUserRepository extends UsesUserRepository {
-  val userRepository = UserRepositoryImpl
+  val userRepository: UserRepositoryImpl.type = UserRepositoryImpl
 }
 
 
