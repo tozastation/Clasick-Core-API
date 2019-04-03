@@ -1,10 +1,8 @@
 package com.github.tozastation.clasickcoreapi
 
 import io.grpc.{Server, ServerBuilder, ServerInterceptors}
-
 import scala.concurrent.ExecutionContext
 import java.util.concurrent.Executors
-
 import com.github.tozastation.clasickcoreapi.application.UserApplicationImpl
 import com.github.tozastation.clasickcoreapi.grpc.user_rpc.UserRpcGrpc
 import com.github.tozastation.clasickcoreapi.interface.util.util
@@ -17,7 +15,6 @@ object server extends App {
     server.start()
     server.blockUnitShutdown()
   }
-
   start()
 }
 

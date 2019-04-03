@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc786d1-dfd8-47ed-af62-b91a35e0819b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project/protoc.sbt" afterDir="false" />
+    <list default="true" id="cdc786d1-dfd8-47ed-af62-b91a35e0819b" name="Default Changelist" comment="[Refactor]: create user table singleton">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_pauldijou_jwt_core_2_12_2_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_bouncycastle_bcpkix_jdk15on_1_60_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_bouncycastle_bcprov_jdk15on_1_60_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/interface/jwt/JwtComponent.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ClassickAndroid/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassickAndroid/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ClassickAndroid/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassickAndroid/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Envoy/Dockerfile" beforeDir="false" />
@@ -68,6 +71,163 @@
       <change beforePath="$PROJECT_DIR$/../Server/obj/server.csproj.nuget.g.targets" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/server.csproj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/server.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/tozastation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/tozastation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/clasick_core_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/clasick_core_api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$41b15be98c6c6144e0ca$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$41b15be98c6c6144e0ca.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$41b15be98c6c6144e0ca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$cb50402661d259f90479$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$cb50402661d259f90479.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$cb50402661d259f90479.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ea726894ec5ee1038914$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ea726894ec5ee1038914.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ea726894ec5ee1038914.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/clasick_core_api-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/clasick_core_api-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/clasick_core_api-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/clasick_core_api-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-clasick_core_api-build-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/domain/service/UserService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/domain/service/UserService.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/repository/UserRepositoryImpl.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/repository/UserRepositoryImpl.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/LoginServiceProto$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/LoginServiceProto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/RequestSignIn$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/RequestSignIn$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/RequestSignIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/RequestSignInOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/RequestSignUp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/RequestSignUp$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/RequestSignUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/RequestSignUpOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/ResponseSignIn$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/ResponseSignIn$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/ResponseSignIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/ResponseSignInOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/ResponseSignUp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/ResponseSignUp$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/ResponseSignUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/ResponseSignUpOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/Result$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$LoginService$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$LoginServiceBlockingClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$LoginServiceBlockingStub$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$LoginServiceBlockingStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$LoginServiceStub$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc$LoginServiceStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceProto$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/LoginServiceProto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/RequestSignIn$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/RequestSignIn$RequestSignInLens.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/RequestSignIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/RequestSignUp$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/RequestSignUp$RequestSignUpLens.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/RequestSignUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/ResponseSignIn$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/ResponseSignIn$ResponseSignInLens.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/ResponseSignIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/ResponseSignUp$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/ResponseSignUp$ResponseSignUpLens.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/ResponseSignUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/Result$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/Result$FAILED$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/Result$SUCCESS$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/Result$Unrecognized$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/Result$Unrecognized.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/tozastation/clasick/loginservice/grpc/login_service/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/clasick_core_api$sources/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/clasick_core_api$sources/0.1/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/clasick_core_api$sources/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/clasick_core_api$sources/0.1/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/clasick_core_api_2.12/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/clasick_core_api_2.12/0.1/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/clasick_core_api_2.12/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/clasick_core_api_2.12/0.1/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-protobuf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-protobuf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-protobuf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-protobuf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-clasick_core_api_2.12-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/com/github/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/com/github/tozastation/clasick/loginservice/grpc/login_service/LoginServiceProto.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/com/github/tozastation/clasick/loginservice/grpc/login_service/RequestSignIn.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/com/github/tozastation/clasick/loginservice/grpc/login_service/RequestSignUp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/com/github/tozastation/clasick/loginservice/grpc/login_service/ResponseSignIn.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/com/github/tozastation/clasick/loginservice/grpc/login_service/ResponseSignUp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/com/github/tozastation/clasick/loginservice/grpc/login_service/Result.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/LoginServiceProto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/RequestSignIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/RequestSignInOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/RequestSignUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/RequestSignUpOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/ResponseSignIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/ResponseSignInOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/ResponseSignUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/ResponseSignUpOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceProto.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/RequestSignIn.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/RequestSignUp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/ResponseSignIn.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/ResponseSignUp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/Result.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructureTo/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructureTo/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/protobuf_2.12/in-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/protobuf_2.12/in-cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/protobuf_2.12/out-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/protobuf_2.12/out-cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../clasick_flutter/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../clasick_flutter/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/weather-app/.gitignore" beforeDir="false" />
@@ -158,18 +318,110 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/application/UserApplicationImpl.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#59#135#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6">
+              <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/domain/service/UserService.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <element signature="e#62#133#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/protobuf/login_service.proto">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/interface/jwt/JwtComponent.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding>
+                <element signature="e#61#128#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/com.pauldijou/jwt-core_2.12/srcs/jwt-core_2.12-2.1.0-sources.jar!/JwtClaim.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/repository/UserRepositoryImpl.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#85#144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/model/user.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/component/BaseDBComponent.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/component/MySQLDBComponent.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/domain/repository/UserRepository.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/domain/model/user.scala" />
+        <option value="$PROJECT_DIR$/src/main/protobuf/login_service.proto" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/application/UserApplicationImpl.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/main.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/interface/util/Logger.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/interface/util/util.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/repository/UserRepositoryImpl.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/interface/jwt/Jwt.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/interface/jwt/JwtComponent.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/domain/service/UserService.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -179,17 +431,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
               <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
@@ -209,18 +458,98 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="protobuf" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="clasickcoreapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="clasickcoreapi" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="clasickcoreapi" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="clasickcoreapi" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="clasickcoreapi" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="clasickcoreapi" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="clasickcoreapi" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clasick_core_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clasick_core_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="clasickcoreapi" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -261,9 +590,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/build.sbt" value="2299386724" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1895257272" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="2567920773" />
-        <entry key="$PROJECT_DIR$/project/protoc.sbt" value="240007012" />
+        <entry key="$PROJECT_DIR$/project/protoc.sbt" value="3089495517" />
       </map>
     </option>
   </component>
@@ -278,47 +607,277 @@
       <option name="presentableId" value="Default" />
       <updated>1553853720514</updated>
       <workItem from="1553853726226" duration="157000" />
+      <workItem from="1553853930118" duration="322000" />
+      <workItem from="1554091325785" duration="12350000" />
+      <workItem from="1554106801037" duration="346000" />
+      <workItem from="1554209327759" duration="79000" />
+      <workItem from="1554209461766" duration="11817000" />
+      <workItem from="1554271313802" duration="4611000" />
     </task>
+    <task id="LOCAL-00001" summary="[Parts]: add user repository implement">
+      <created>1554212685644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554212685644</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Parts]: add type annotation">
+      <created>1554212794755</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554212794755</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Parts]: add db component as singleton">
+      <created>1554212844702</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554212844702</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[Refactor]: add new func &amp; fix package name">
+      <created>1554217129578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554217129578</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[Fix]: function parameter">
+      <created>1554217187427</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554217187427</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[Refactor]: create user table singleton">
+      <created>1554217272881</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554217272881</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157000" />
+    <option name="totallyTimeSpent" value="29682000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2435484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20645161" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" visible="true" weight="0.32944608" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="SBT Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.32944608" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="sbt" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" visible="true" weight="0.17427386" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="SBT Console" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.32944608" />
+      <window_info anchor="bottom" id="Spring" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32918397" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="sbt" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Parts]: add user repository implement" />
+    <MESSAGE value="[Parts]: add type annotation" />
+    <MESSAGE value="[Parts]: add db component as singleton" />
+    <MESSAGE value="[Refactor]: file name" />
+    <MESSAGE value="[Refactor]: add new func &amp; fix package name" />
+    <MESSAGE value="[Fix]: function parameter" />
+    <MESSAGE value="[Refactor]: create user table singleton" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor]: create user table singleton" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/protobuf/login_service.proto">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/model/user.scala" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/concurrent/Future.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="261" column="4" selection-start-line="261" selection-start-column="3" selection-end-line="261" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/component/MySQLDBComponent.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="e#84#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala" />
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-java/tozastation/clasick/loginservice/grpc/LoginServiceProto.java" />
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/com/github/tozastation/clasick/loginservice/grpc/login_service/LoginServiceGrpc.scala" />
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/domain/service/login_service/LoginServiceGrpc.scala" />
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/domain/service/login_service/RequestSignUp.scala" />
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/grpc/login_service/ResponseGetSingleUser.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/component/DBComponent.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/grpc/login_service/ResponseSignUp.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/domain/repository/UserRepository.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="e#65#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.slick/slick_2.12/srcs/slick_2.12-3.3.0-sources.jar!/slick/jdbc/JdbcProfile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/domain/model/user.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <element signature="e#60#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/grpc/login_service/ResponseSignIn.scala" />
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/grpc/login_service/UserServiceGrpc.scala" />
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/grpc/login_service/LoginServiceProto.scala" />
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/grpc/login_service/UserRpcGrpc.scala" />
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/grpc/login_service/UserGrpc.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/protobuf/login_service.proto" />
+    <entry file="file://$PROJECT_DIR$/src/main/protobuf/user_rpc.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/grpc/user_rpc/UserRpcGrpc.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/src_managed/main/protobuf-scala/com/github/tozastation/clasickcoreapi/grpc/user_rpc/UserRpcProto.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/application/UserApplicationImpl.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#59#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/interface/util/util.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#62#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/repository/UserRepositoryImpl.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#85#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.pauldijou/jwt-core_2.12/srcs/jwt-core_2.12-2.1.0-sources.jar!/JwtClaim.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/domain/service/UserService.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#62#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/tozastation/clasickcoreapi/interface/jwt/JwtComponent.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#61#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

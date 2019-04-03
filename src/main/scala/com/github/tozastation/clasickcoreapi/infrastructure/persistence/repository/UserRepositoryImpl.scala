@@ -3,7 +3,9 @@ package com.github.tozastation.clasickcoreapi.infrastructure.persistence.reposit
 import com.github.tozastation.clasickcoreapi.domain.model._
 import com.github.tozastation.clasickcoreapi.domain.repository.{UserRepository, UsesUserRepository}
 import com.github.tozastation.clasickcoreapi.infrastructure.persistence.component.MySQLDBComponent
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import slick.jdbc.MySQLProfile.api._
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
@@ -31,7 +33,8 @@ object UserRepositoryImpl extends UserRepository {
   }
 
   override def selectMe(name: UserName, pass: UserPass): Future[Option[User]] = {
-    val q = Users.filter(u => u.name === name && u.pass === pass)
+    val q = Users.filter(u => u.name === name)
     MySQLDBComponent.db.run(q.result.headOption)
   }
+
 }
