@@ -6,40 +6,40 @@
 		module="clasick_core_api_2.12"
 		revision="0.1"
 		conf="test"
-		confs="compile, runtime, test, provided, optional, protobuf, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190403160212"/>
+		confs="compile, runtime, test, provided, optional, protobuf, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20190408135857"/>
 	<dependencies>
 		<module organisation="com.pauldijou" name="jwt-core_2.12">
-			<revision name="2.1.0" status="release" pubdate="20190224195803" resolver="public" artresolver="public" homepage="http://pauldijou.fr/jwt-scala/" extra-info.apiURL="http://pauldijou.fr/jwt-scala/api/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="65">
+			<revision name="2.1.0" status="release" pubdate="20190224195803" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pauldijou.fr/jwt-scala/" extra-info.apiURL="http://pauldijou.fr/jwt-scala/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="65">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="successful" details="" size="2180" time="1062" location="/Users/tozastation/.ivy2/cache/com.pauldijou/jwt-core_2.12/ivy-2.1.0.xml" searched="true" original-local-location="/Users/tozastation/.ivy2/cache/com.pauldijou/jwt-core_2.12/ivy-2.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/pauldijou/jwt-core_2.12/2.1.0/jwt-core_2.12-2.1.0.pom"/>
+				<metadata-artifact status="no" details="" size="3178" time="0" location="/Users/tozastation/.ivy2/cache/com.pauldijou/jwt-core_2.12/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/pauldijou/jwt-core_2.12/2.1.0/jwt-core_2.12-2.1.0.pom"/>
 				<caller organisation="default" name="clasick_core_api_2.12" conf="test, compile, runtime" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jwt-core_2.12" type="jar" ext="jar" status="successful" details="" size="101297" time="3920" location="/Users/tozastation/.ivy2/cache/com.pauldijou/jwt-core_2.12/jars/jwt-core_2.12-2.1.0.jar">
+					<artifact name="jwt-core_2.12" type="jar" ext="jar" status="no" details="" size="101297" time="0" location="/Users/tozastation/.ivy2/cache/com.pauldijou/jwt-core_2.12/jars/jwt-core_2.12-2.1.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/pauldijou/jwt-core_2.12/2.1.0/jwt-core_2.12-2.1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.bouncycastle" name="bcpkix-jdk15on">
-			<revision name="1.60" status="release" pubdate="20180706092238" resolver="public" artresolver="public" homepage="http://www.bouncycastle.org/java.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+			<revision name="1.60" status="release" pubdate="20180706092238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
 				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
-				<metadata-artifact status="successful" details="" size="1467" time="721" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/ivy-1.60.xml" searched="true" original-local-location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/ivy-1.60.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.pom"/>
+				<metadata-artifact status="no" details="" size="2927" time="0" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/ivy-1.60.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.pom"/>
 				<caller organisation="com.pauldijou" name="jwt-core_2.12" conf="default, compile, runtime, master" rev="1.60" rev-constraint-default="1.60" rev-constraint-dynamic="1.60" callerrev="2.1.0"/>
 				<artifacts>
-					<artifact name="bcpkix-jdk15on" type="jar" ext="jar" status="successful" details="" size="796532" time="4965" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/jars/bcpkix-jdk15on-1.60.jar">
+					<artifact name="bcpkix-jdk15on" type="jar" ext="jar" status="no" details="" size="796532" time="0" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/jars/bcpkix-jdk15on-1.60.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.bouncycastle" name="bcprov-jdk15on">
-			<revision name="1.60" status="release" pubdate="20180706091943" resolver="public" artresolver="public" homepage="http://www.bouncycastle.org/java.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+			<revision name="1.60" status="release" pubdate="20180706091943" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
 				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
-				<metadata-artifact status="successful" details="" size="1143" time="720" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/ivy-1.60.xml" searched="true" original-local-location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/ivy-1.60.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.pom"/>
+				<metadata-artifact status="no" details="" size="2676" time="0" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/ivy-1.60.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.pom"/>
 				<caller organisation="org.bouncycastle" name="bcpkix-jdk15on" conf="compile, runtime" rev="1.60" rev-constraint-default="1.60" rev-constraint-dynamic="1.60" callerrev="1.60"/>
 				<artifacts>
-					<artifact name="bcprov-jdk15on" type="jar" ext="jar" status="successful" details="" size="4189874" time="7411" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.60.jar">
+					<artifact name="bcprov-jdk15on" type="jar" ext="jar" status="no" details="" size="4189874" time="0" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.60.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar"/>
 					</artifact>
 				</artifacts>

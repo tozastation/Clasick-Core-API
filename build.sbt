@@ -23,3 +23,5 @@ libraryDependencies ++= Seq(
     "ch.qos.logback" % "logback-classic" % "1.2.3",
     "com.pauldijou" %% "jwt-core" % "2.1.0"
 )
+
+enablePlugins(JavaAppPackaging)
