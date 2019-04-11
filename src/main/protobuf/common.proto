@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "com.github.tozastation.clasickcoreapi.grpc";
+package common;
+// Result: レスポンスの結果
+enum Result {
+    SUCCESS = 0;
+    FAILED = 1;
+}

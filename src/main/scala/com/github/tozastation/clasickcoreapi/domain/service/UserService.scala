@@ -2,9 +2,10 @@ package com.github.tozastation.clasickcoreapi.domain.service
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import com.github.tozastation.clasickcoreapi.domain.model._
-import com.github.tozastation.clasickcoreapi.grpc.user_rpc._
+import com.github.tozastation.clasickcoreapi.grpc.user_rpc.{RequestGetSingleUser, RequestSignIn, RequestSignUp, ResponseGetSingleUser, ResponseSignIn, ResponseSignUp, ResponseUser}
 import com.github.tozastation.clasickcoreapi.infrastructure.persistence.repository.MixInUserRepository
 import com.github.tozastation.clasickcoreapi.interface.jwt.JwtComponent
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
@@ -15,7 +16,7 @@ trait UsesUserService {
 trait UserService {
   def createUser(requestSignUp: RequestSignUp): Future[ResponseSignUp]
 
-  def checkExistMe(requestSignIn: RequestSignIn): Future[ResonseSignIn]
+  def checkExistMe(requestSignIn: RequestSignIn): Future[ResponseSignIn]
 
   def getSingleUser(requestGetSingleUser: RequestGetSingleUser): Future[ResponseGetSingleUser]
 }
@@ -48,8 +49,8 @@ object UserServiceImpl extends UserService with MixInUserRepository {
     )
     val maybeAccessToken = userRepository.createUser(user)
     maybeAccessToken.transform(
-      { accessToken => return Future(ResponseSignUp(accessToken = accessToken.get.value, result = Result.SUCCESS)) },
-      { _ => return Future(ResponseSignUp(accessToken = null, result = Result.FAILED)) }
+      { accessToken => return Future(ResponseSignUp(accessToken = accessToken.get.value)) },
+      { _ => return Future(ResponseSignUp(accessToken = null)) }
     )
   }
 
@@ -64,12 +65,12 @@ object UserServiceImpl extends UserService with MixInUserRepository {
     maybeUser.transform(
       { user =>
         if (authenticate(requestSignIn.password, user.get.pass.value)) {
-          return Future(ResponseSignIn(accessToken = user.get.accessToken.value, result = Result.SUCCESS))
+          return Future(ResponseSignIn(accessToken = user.get.accessToken.value))
         } else {
-          return Future(ResponseSignIn(accessToken = null, result = Result.FAILED))
+          return Future(ResponseSignIn(accessToken = null))
         }
       },
-      { _ => return Future(ResponseSignIn(accessToken = null, result = Result.FAILED)) }
+      { _ => return Future(ResponseSignIn(accessToken = null)) }
     )
   }
 
@@ -80,15 +81,13 @@ object UserServiceImpl extends UserService with MixInUserRepository {
       { user =>
         return Future(
           ResponseGetSingleUser(
-            user = Option(ResponseUser(userId = user.get.id.value, userName = user.get.name.value)),
-            result = Result.SUCCESS
+            user = Option(ResponseUser(userId = user.get.id.value, userName = user.get.name.value))
           ))
       },
       { _ =>
         return Future(
           ResponseGetSingleUser(
-            user = null,
-            result = Result.FAILED
+            user = null
           ))
       }
     )
