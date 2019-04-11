@@ -15,7 +15,7 @@ trait UsesUserService {
 trait UserService {
   def createUser(requestSignUp: RequestSignUp): Future[ResponseSignUp]
 
-  def checkExistMe(requestSignIn: RequestSignIn): Future[ResponseSignIn]
+  def checkExistMe(requestSignIn: RequestSignIn): Future[ResonseSignIn]
 
   def getSingleUser(requestGetSingleUser: RequestGetSingleUser): Future[ResponseGetSingleUser]
 }
@@ -27,16 +27,24 @@ trait MixInUserService extends UsesUserService {
 object UserServiceImpl extends UserService with MixInUserRepository {
 
   override def createUser(requestSignUp: RequestSignUp): Future[ResponseSignUp] = {
+    val userName = UserName(value = requestSignUp.name)
+    val userPass = UserPass(value = requestSignUp.password)
+    val contact = Contact(email = requestSignUp.contact.get.email, phone = requestSignUp.contact.get.phoneNum)
     // パスワードハッシュ化
-    val hashedString = createHash(requestSignUp.password)
+    val hashedPass = UserPass(value = userPass.value)
     // Jwt生成
-    val token = JwtComponent.createJwt(requestSignUp.userName)
+    val accessToken = AccessToken(value = JwtComponent.createJwt(userName.value))
+    /**
+      * SignUp時に，自己紹介とユーザアイコンは登録しない
+      */
     val user = User(
       id = null,
-      name = UserName(value = requestSignUp.userName),
-      pass = UserPass(value = hashedString),
-      contact = Contact(email = "", phone = ""),
-      accessToken = AccessToken(value = token)
+      name = userName,
+      pass = hashedPass,
+      contact = contact,
+      accessToken = accessToken,
+      iconPath = null,
+      introduction = null
     )
     val maybeAccessToken = userRepository.createUser(user)
     maybeAccessToken.transform(
@@ -46,10 +54,12 @@ object UserServiceImpl extends UserService with MixInUserRepository {
   }
 
   override def checkExistMe(requestSignIn: RequestSignIn): Future[ResponseSignIn] = {
+    val userName = UserName(value = requestSignIn.name)
+    val userPass = UserPass(value = requestSignIn.password)
     // maybeUser Future[Option[User]]
     val maybeUser = userRepository.selectMe(
-      name = UserName(value = requestSignIn.userName),
-      pass = UserPass(value = requestSignIn.password)
+      name = userName,
+      pass = userPass
     )
     maybeUser.transform(
       { user =>
@@ -64,7 +74,8 @@ object UserServiceImpl extends UserService with MixInUserRepository {
   }
 
   override def getSingleUser(requestGetSingleUser: RequestGetSingleUser): Future[ResponseGetSingleUser] = {
-    val maybeUser = userRepository.selectUser(id = UserId(value = requestGetSingleUser.userId))
+    val id = UserId(value = requestGetSingleUser.userId)
+    val maybeUser = userRepository.selectUser(id = id)
     maybeUser.transform(
       { user =>
         return Future(
