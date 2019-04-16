@@ -28,6 +28,7 @@ trait MixInUserService extends UsesUserService {
 object UserServiceImpl extends UserService with MixInUserRepository {
 
   override def createUser(requestSignUp: RequestSignUp): Future[ResponseSignUp] = {
+    val userId = UserId(value = 0)
     val userName = UserName(value = requestSignUp.name)
     val userPass = UserPass(value = requestSignUp.password)
     val contact = Contact(email = requestSignUp.contact.get.email, phone = requestSignUp.contact.get.phoneNum)
@@ -39,18 +40,17 @@ object UserServiceImpl extends UserService with MixInUserRepository {
       * SignUp時に，自己紹介とユーザアイコンは登録しない
       */
     val user = User(
-      id = null,
+      id = userId,
       name = userName,
       pass = hashedPass,
       contact = contact,
       accessToken = accessToken,
-      iconPath = null,
+      userIconPath = null,
       introduction = null
     )
     val maybeAccessToken = userRepository.createUser(user)
-    maybeAccessToken.transform(
-      { accessToken => return Future(ResponseSignUp(accessToken = accessToken.get.value)) },
-      { _ => return Future(ResponseSignUp(accessToken = null)) }
+    maybeAccessToken.flatMap(
+      accessToken => Future(ResponseSignUp(accessToken = accessToken.get.value))
     )
   }
 
@@ -62,34 +62,25 @@ object UserServiceImpl extends UserService with MixInUserRepository {
       name = userName,
       pass = userPass
     )
-    maybeUser.transform(
-      { user =>
+    maybeUser.flatMap(
+      user =>
         if (authenticate(requestSignIn.password, user.get.pass.value)) {
-          return Future(ResponseSignIn(accessToken = user.get.accessToken.value))
+          Future(ResponseSignIn(accessToken = user.get.accessToken.value))
         } else {
-          return Future(ResponseSignIn(accessToken = null))
+          Future(ResponseSignIn(accessToken = null))
         }
-      },
-      { _ => return Future(ResponseSignIn(accessToken = null)) }
     )
   }
 
   override def getSingleUser(requestGetSingleUser: RequestGetSingleUser): Future[ResponseGetSingleUser] = {
     val id = UserId(value = requestGetSingleUser.userId)
     val maybeUser = userRepository.selectUser(id = id)
-    maybeUser.transform(
-      { user =>
-        return Future(
-          ResponseGetSingleUser(
-            user = Option(ResponseUser(userId = user.get.id.value, userName = user.get.name.value))
-          ))
-      },
-      { _ =>
-        return Future(
-          ResponseGetSingleUser(
-            user = null
-          ))
-      }
+    maybeUser.flatMap(
+      user => Future(
+        ResponseGetSingleUser(
+          user = Option(ResponseUser(userId = user.get.id.value, userName = user.get.name.value))
+        )
+      )
     )
   }
 

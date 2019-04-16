@@ -17,6 +17,8 @@ libraryDependencies ++= Seq(
     "com.thesamet.scalapb" %% "scalapb-runtime-grpc" % scalapb.compiler.Version.scalapbVersion,
     "io.grpc" % "grpc-all" % scalapb.compiler.Version.grpcJavaVersion,
     "com.typesafe.slick" %% "slick" % "3.3.0",
+    "com.typesafe.slick" %% "slick-hikaricp" % "3.3.0",
+    "com.typesafe.slick" %% "slick-codegen" % "3.3.0",
     "mysql" % "mysql-connector-java" % "8.0.15",
     "org.springframework.security" % "spring-security-web" % "5.1.4.RELEASE",
     "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",

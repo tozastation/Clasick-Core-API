@@ -1,5 +1,6 @@
 package com.github.tozastation.clasickcoreapi.infrastructure.persistence.component
 
+import com.github.tozastation.clasickcoreapi.domain.model.{Albums, Artists, Genres, Members, Musics, Playlists, Users}
 import com.typesafe.config.ConfigFactory
 import slick.jdbc.MySQLProfile.api._
 import slick.jdbc.{JdbcProfile, MySQLProfile}
@@ -10,7 +11,7 @@ import slick.jdbc.{JdbcProfile, MySQLProfile}
   */
 
 /** Database component for MySQL **/
-object MySQLDBComponent extends DBComponent {
+trait MySQLDBComponent extends DBComponent {
 
   /** Jdbc profile **/
   override lazy val profile: JdbcProfile = MySQLProfile
@@ -31,4 +32,19 @@ private object MySQLDBConnector {
   /** Connection **/
   val connection = Database.forConfig("slick.mysql", config)
 
+}
+
+object InitDB {
+  private val config = ConfigFactory.load("database.conf")
+  config.checkValid(ConfigFactory.defaultReference(), "slick.mysql")
+  private val db = Database.forConfig("slick.mysql", config)
+  val schema = Users.schema
+
+  def main(args: Array[String]): Unit = {
+    db.run(DBIO.seq(
+      schema.create,
+      //...
+      //schema.drop
+    ))
+  }//++ Musics.schema ++ Playlists.schema ++ Artists.schema ++ Genres.schema ++ Members.schema ++ Albums.schema
 }

@@ -8,14 +8,14 @@ public interface RequestSignUpOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string user_name = 1;</code>
+   * <code>string name = 1;</code>
    */
-  java.lang.String getUserName();
+  java.lang.String getName();
   /**
-   * <code>string user_name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
-      getUserNameBytes();
+      getNameBytes();
 
   /**
    * <code>string password = 2;</code>
@@ -28,11 +28,15 @@ public interface RequestSignUpOrBuilder extends
       getPasswordBytes();
 
   /**
-   * <code>.user.Result result = 3;</code>
+   * <code>.user.Contact contact = 3;</code>
    */
-  int getResultValue();
+  boolean hasContact();
   /**
-   * <code>.user.Result result = 3;</code>
+   * <code>.user.Contact contact = 3;</code>
    */
-  com.github.tozastation.clasickcoreapi.grpc.Result getResult();
+  com.github.tozastation.clasickcoreapi.grpc.Contact getContact();
+  /**
+   * <code>.user.Contact contact = 3;</code>
+   */
+  com.github.tozastation.clasickcoreapi.grpc.ContactOrBuilder getContactOrBuilder();
 }

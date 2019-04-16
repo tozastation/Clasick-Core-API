@@ -1,0 +1,23 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/clasick_core_api_2.12-0.1-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/infrastructure/persistence/component/MySQLDBComponent.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/component/MySQLDBComponent.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/server.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/infrastructure/persistence/repository/UserRepositoryImpl.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/repository/UserRepositoryImpl.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/domain/repository/UserRepository.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/domain/repository/UserRepository.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/domain/service/UserService.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/domain/service/UserService.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/interface/jwt/JwtComponent.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/interface/jwt/JwtComponent.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/interface/util/util.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/interface/util/util.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/application/UserApplicationImpl.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/application/UserApplicationImpl.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/infrastructure/persistence/component/DBComponent.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/infrastructure/persistence/component/DBComponent.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/github/tozastation/clasickcoreapi/domain/model/user.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/domain/model/user.scala[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

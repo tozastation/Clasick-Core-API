@@ -18,6 +18,8 @@ private static final long serialVersionUID = 0L;
   private ResponseUser() {
     userId_ = 0;
     userName_ = "";
+    iconPath_ = "";
+    introduction_ = "";
   }
 
   @java.lang.Override
@@ -53,6 +55,18 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             userName_ = s;
+            break;
+          }
+          case 26: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            iconPath_ = s;
+            break;
+          }
+          case 34: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            introduction_ = s;
             break;
           }
           default: {
@@ -130,6 +144,74 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int ICON_PATH_FIELD_NUMBER = 3;
+  private volatile java.lang.Object iconPath_;
+  /**
+   * <code>string icon_path = 3;</code>
+   */
+  public java.lang.String getIconPath() {
+    java.lang.Object ref = iconPath_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      iconPath_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string icon_path = 3;</code>
+   */
+  public com.google.protobuf.ByteString
+      getIconPathBytes() {
+    java.lang.Object ref = iconPath_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      iconPath_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int INTRODUCTION_FIELD_NUMBER = 4;
+  private volatile java.lang.Object introduction_;
+  /**
+   * <code>string introduction = 4;</code>
+   */
+  public java.lang.String getIntroduction() {
+    java.lang.Object ref = introduction_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      introduction_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string introduction = 4;</code>
+   */
+  public com.google.protobuf.ByteString
+      getIntroductionBytes() {
+    java.lang.Object ref = introduction_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      introduction_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -150,6 +232,12 @@ private static final long serialVersionUID = 0L;
     if (!getUserNameBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, userName_);
     }
+    if (!getIconPathBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, iconPath_);
+    }
+    if (!getIntroductionBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, introduction_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -165,6 +253,12 @@ private static final long serialVersionUID = 0L;
     }
     if (!getUserNameBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, userName_);
+    }
+    if (!getIconPathBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, iconPath_);
+    }
+    if (!getIntroductionBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, introduction_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -186,6 +280,10 @@ private static final long serialVersionUID = 0L;
         == other.getUserId());
     result = result && getUserName()
         .equals(other.getUserName());
+    result = result && getIconPath()
+        .equals(other.getIconPath());
+    result = result && getIntroduction()
+        .equals(other.getIntroduction());
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -201,6 +299,10 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getUserId();
     hash = (37 * hash) + USER_NAME_FIELD_NUMBER;
     hash = (53 * hash) + getUserName().hashCode();
+    hash = (37 * hash) + ICON_PATH_FIELD_NUMBER;
+    hash = (53 * hash) + getIconPath().hashCode();
+    hash = (37 * hash) + INTRODUCTION_FIELD_NUMBER;
+    hash = (53 * hash) + getIntroduction().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -338,6 +440,10 @@ private static final long serialVersionUID = 0L;
 
       userName_ = "";
 
+      iconPath_ = "";
+
+      introduction_ = "";
+
       return this;
     }
 
@@ -366,6 +472,8 @@ private static final long serialVersionUID = 0L;
       com.github.tozastation.clasickcoreapi.grpc.ResponseUser result = new com.github.tozastation.clasickcoreapi.grpc.ResponseUser(this);
       result.userId_ = userId_;
       result.userName_ = userName_;
+      result.iconPath_ = iconPath_;
+      result.introduction_ = introduction_;
       onBuilt();
       return result;
     }
@@ -419,6 +527,14 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getUserName().isEmpty()) {
         userName_ = other.userName_;
+        onChanged();
+      }
+      if (!other.getIconPath().isEmpty()) {
+        iconPath_ = other.iconPath_;
+        onChanged();
+      }
+      if (!other.getIntroduction().isEmpty()) {
+        introduction_ = other.introduction_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -541,6 +657,144 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       userName_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object iconPath_ = "";
+    /**
+     * <code>string icon_path = 3;</code>
+     */
+    public java.lang.String getIconPath() {
+      java.lang.Object ref = iconPath_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        iconPath_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string icon_path = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getIconPathBytes() {
+      java.lang.Object ref = iconPath_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        iconPath_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string icon_path = 3;</code>
+     */
+    public Builder setIconPath(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      iconPath_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string icon_path = 3;</code>
+     */
+    public Builder clearIconPath() {
+      
+      iconPath_ = getDefaultInstance().getIconPath();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string icon_path = 3;</code>
+     */
+    public Builder setIconPathBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      iconPath_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object introduction_ = "";
+    /**
+     * <code>string introduction = 4;</code>
+     */
+    public java.lang.String getIntroduction() {
+      java.lang.Object ref = introduction_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        introduction_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string introduction = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getIntroductionBytes() {
+      java.lang.Object ref = introduction_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        introduction_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string introduction = 4;</code>
+     */
+    public Builder setIntroduction(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      introduction_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string introduction = 4;</code>
+     */
+    public Builder clearIntroduction() {
+      
+      introduction_ = getDefaultInstance().getIntroduction();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string introduction = 4;</code>
+     */
+    public Builder setIntroductionBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      introduction_ = value;
       onChanged();
       return this;
     }

@@ -4,6 +4,11 @@
 package com.github.tozastation.clasickcoreapi.grpc;
 
 /**
+ * <pre>
+ **
+ * rpc : SignIn
+ * </pre>
+ *
  * Protobuf type {@code user.RequestSignIn}
  */
 public  final class RequestSignIn extends
@@ -16,7 +21,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private RequestSignIn() {
-    userName_ = "";
+    name_ = "";
     password_ = "";
   }
 
@@ -47,7 +52,7 @@ private static final long serialVersionUID = 0L;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            userName_ = s;
+            name_ = s;
             break;
           }
           case 18: {
@@ -88,34 +93,34 @@ private static final long serialVersionUID = 0L;
             com.github.tozastation.clasickcoreapi.grpc.RequestSignIn.class, com.github.tozastation.clasickcoreapi.grpc.RequestSignIn.Builder.class);
   }
 
-  public static final int USER_NAME_FIELD_NUMBER = 1;
-  private volatile java.lang.Object userName_;
+  public static final int NAME_FIELD_NUMBER = 1;
+  private volatile java.lang.Object name_;
   /**
-   * <code>string user_name = 1;</code>
+   * <code>string name = 1;</code>
    */
-  public java.lang.String getUserName() {
-    java.lang.Object ref = userName_;
+  public java.lang.String getName() {
+    java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      userName_ = s;
+      name_ = s;
       return s;
     }
   }
   /**
-   * <code>string user_name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getUserNameBytes() {
-    java.lang.Object ref = userName_;
+      getNameBytes() {
+    java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      userName_ = b;
+      name_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -170,8 +175,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getUserNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, userName_);
+    if (!getNameBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
     }
     if (!getPasswordBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, password_);
@@ -185,8 +190,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getUserNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, userName_);
+    if (!getNameBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
     }
     if (!getPasswordBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, password_);
@@ -207,8 +212,8 @@ private static final long serialVersionUID = 0L;
     com.github.tozastation.clasickcoreapi.grpc.RequestSignIn other = (com.github.tozastation.clasickcoreapi.grpc.RequestSignIn) obj;
 
     boolean result = true;
-    result = result && getUserName()
-        .equals(other.getUserName());
+    result = result && getName()
+        .equals(other.getName());
     result = result && getPassword()
         .equals(other.getPassword());
     result = result && unknownFields.equals(other.unknownFields);
@@ -222,8 +227,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + USER_NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getUserName().hashCode();
+    hash = (37 * hash) + NAME_FIELD_NUMBER;
+    hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + PASSWORD_FIELD_NUMBER;
     hash = (53 * hash) + getPassword().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -322,6 +327,11 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
+   * <pre>
+   **
+   * rpc : SignIn
+   * </pre>
+   *
    * Protobuf type {@code user.RequestSignIn}
    */
   public static final class Builder extends
@@ -359,7 +369,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      userName_ = "";
+      name_ = "";
 
       password_ = "";
 
@@ -389,7 +399,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.github.tozastation.clasickcoreapi.grpc.RequestSignIn buildPartial() {
       com.github.tozastation.clasickcoreapi.grpc.RequestSignIn result = new com.github.tozastation.clasickcoreapi.grpc.RequestSignIn(this);
-      result.userName_ = userName_;
+      result.name_ = name_;
       result.password_ = password_;
       onBuilt();
       return result;
@@ -439,8 +449,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(com.github.tozastation.clasickcoreapi.grpc.RequestSignIn other) {
       if (other == com.github.tozastation.clasickcoreapi.grpc.RequestSignIn.getDefaultInstance()) return this;
-      if (!other.getUserName().isEmpty()) {
-        userName_ = other.userName_;
+      if (!other.getName().isEmpty()) {
+        name_ = other.name_;
         onChanged();
       }
       if (!other.getPassword().isEmpty()) {
@@ -476,71 +486,71 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object userName_ = "";
+    private java.lang.Object name_ = "";
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
-    public java.lang.String getUserName() {
-      java.lang.Object ref = userName_;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        userName_ = s;
+        name_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getUserNameBytes() {
-      java.lang.Object ref = userName_;
+        getNameBytes() {
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        userName_ = b;
+        name_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
-    public Builder setUserName(
+    public Builder setName(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      userName_ = value;
+      name_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
-    public Builder clearUserName() {
+    public Builder clearName() {
       
-      userName_ = getDefaultInstance().getUserName();
+      name_ = getDefaultInstance().getName();
       onChanged();
       return this;
     }
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
-    public Builder setUserNameBytes(
+    public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      userName_ = value;
+      name_ = value;
       onChanged();
       return this;
     }

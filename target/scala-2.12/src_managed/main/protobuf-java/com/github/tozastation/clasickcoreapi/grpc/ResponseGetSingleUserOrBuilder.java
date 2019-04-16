@@ -19,13 +19,4 @@ public interface ResponseGetSingleUserOrBuilder extends
    * <code>.user.ResponseUser user = 1;</code>
    */
   com.github.tozastation.clasickcoreapi.grpc.ResponseUserOrBuilder getUserOrBuilder();
-
-  /**
-   * <code>.user.Result result = 2;</code>
-   */
-  int getResultValue();
-  /**
-   * <code>.user.Result result = 2;</code>
-   */
-  com.github.tozastation.clasickcoreapi.grpc.Result getResult();
 }

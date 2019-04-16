@@ -7,23 +7,23 @@ case class MusicId(value: Int) extends MappedTo[Int]
 
 case class MusicName(value: String) extends MappedTo[String]
 
-case class Description(value: String) extends MappedTo[String]
+case class MusicDescription(value: String) extends MappedTo[String]
 
 case class ManifestPath(value: String) extends MappedTo[String]
 
 case class Music(
                   id: AlbumId,
                   name: AlbumName,
-                  description: Description,
+                  description: MusicDescription,
                   manifestPath: ManifestPath
                 )
 
 class Musics(tag: Tag) extends Table[Music](tag, "music") {
   def id = column[AlbumId]("id", O.PrimaryKey, O.AutoInc)
   def name = column[AlbumName]("name")
-  def description = column[Description]("description")
+  def musicDescription = column[MusicDescription]("description")
   def manifestPath = column[ManifestPath]("m3u8_path")
-  def * = (id, name, description, manifestPath) <> (Music.tupled, Music.unapply)
+  def * = (id, name, musicDescription, manifestPath) <> (Music.tupled, Music.unapply)
 }
 
 object Musics extends TableQuery(new Musics(_))

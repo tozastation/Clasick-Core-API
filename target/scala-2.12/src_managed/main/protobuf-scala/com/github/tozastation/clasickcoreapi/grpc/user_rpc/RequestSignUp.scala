@@ -5,11 +5,14 @@
 
 package com.github.tozastation.clasickcoreapi.grpc.user_rpc
 
+/** *
+  * rpc : SignUp
+  */
 @SerialVersionUID(0L)
 final case class RequestSignUp(
-    userName: _root_.scala.Predef.String = "",
+    name: _root_.scala.Predef.String = "",
     password: _root_.scala.Predef.String = "",
-    result: com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result = com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS
+    contact: _root_.scala.Option[com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact] = _root_.scala.None
     ) extends scalapb.GeneratedMessage with scalapb.Message[RequestSignUp] with scalapb.lenses.Updatable[RequestSignUp] {
     @transient
     private[this] var __serializedSizeCachedValue: _root_.scala.Int = 0
@@ -17,7 +20,7 @@ final case class RequestSignUp(
       var __size = 0
       
       {
-        val __value = userName
+        val __value = name
         if (__value != "") {
           __size += _root_.com.google.protobuf.CodedOutputStream.computeStringSize(1, __value)
         }
@@ -29,12 +32,9 @@ final case class RequestSignUp(
           __size += _root_.com.google.protobuf.CodedOutputStream.computeStringSize(2, __value)
         }
       };
-      
-      {
-        val __value = result
-        if (__value != com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS) {
-          __size += _root_.com.google.protobuf.CodedOutputStream.computeEnumSize(3, __value.value)
-        }
+      if (contact.isDefined) {
+        val __value = contact.get
+        __size += 1 + _root_.com.google.protobuf.CodedOutputStream.computeUInt32SizeNoTag(__value.serializedSize) + __value.serializedSize
       };
       __size
     }
@@ -48,7 +48,7 @@ final case class RequestSignUp(
     }
     def writeTo(`_output__`: _root_.com.google.protobuf.CodedOutputStream): _root_.scala.Unit = {
       {
-        val __v = userName
+        val __v = name
         if (__v != "") {
           _output__.writeString(1, __v)
         }
@@ -59,62 +59,61 @@ final case class RequestSignUp(
           _output__.writeString(2, __v)
         }
       };
-      {
-        val __v = result
-        if (__v != com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS) {
-          _output__.writeEnum(3, __v.value)
-        }
+      contact.foreach { __v =>
+        val __m = __v
+        _output__.writeTag(3, 2)
+        _output__.writeUInt32NoTag(__m.serializedSize)
+        __m.writeTo(_output__)
       };
     }
     def mergeFrom(`_input__`: _root_.com.google.protobuf.CodedInputStream): com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp = {
-      var __userName = this.userName
+      var __name = this.name
       var __password = this.password
-      var __result = this.result
+      var __contact = this.contact
       var _done__ = false
       while (!_done__) {
         val _tag__ = _input__.readTag()
         _tag__ match {
           case 0 => _done__ = true
           case 10 =>
-            __userName = _input__.readString()
+            __name = _input__.readString()
           case 18 =>
             __password = _input__.readString()
-          case 24 =>
-            __result = com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.fromValue(_input__.readEnum())
+          case 26 =>
+            __contact = Option(_root_.scalapb.LiteParser.readMessage(_input__, __contact.getOrElse(com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact.defaultInstance)))
           case tag => _input__.skipField(tag)
         }
       }
       com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp(
-          userName = __userName,
+          name = __name,
           password = __password,
-          result = __result
+          contact = __contact
       )
     }
-    def withUserName(__v: _root_.scala.Predef.String): RequestSignUp = copy(userName = __v)
+    def withName(__v: _root_.scala.Predef.String): RequestSignUp = copy(name = __v)
     def withPassword(__v: _root_.scala.Predef.String): RequestSignUp = copy(password = __v)
-    def withResult(__v: com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result): RequestSignUp = copy(result = __v)
+    def getContact: com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact = contact.getOrElse(com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact.defaultInstance)
+    def clearContact: RequestSignUp = copy(contact = _root_.scala.None)
+    def withContact(__v: com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact): RequestSignUp = copy(contact = Option(__v))
     def getFieldByNumber(__fieldNumber: _root_.scala.Int): _root_.scala.Any = {
       (__fieldNumber: @_root_.scala.unchecked) match {
         case 1 => {
-          val __t = userName
+          val __t = name
           if (__t != "") __t else null
         }
         case 2 => {
           val __t = password
           if (__t != "") __t else null
         }
-        case 3 => {
-          val __t = result.javaValueDescriptor
-          if (__t.getNumber() != 0) __t else null
-        }
+        case 3 => contact.orNull
       }
     }
     def getField(__field: _root_.scalapb.descriptors.FieldDescriptor): _root_.scalapb.descriptors.PValue = {
       _root_.scala.Predef.require(__field.containingMessage eq companion.scalaDescriptor)
       (__field.number: @_root_.scala.unchecked) match {
-        case 1 => _root_.scalapb.descriptors.PString(userName)
+        case 1 => _root_.scalapb.descriptors.PString(name)
         case 2 => _root_.scalapb.descriptors.PString(password)
-        case 3 => _root_.scalapb.descriptors.PEnum(result.scalaValueDescriptor)
+        case 3 => contact.map(_.toPMessage).getOrElse(_root_.scalapb.descriptors.PEmpty)
       }
     }
     def toProtoString: _root_.scala.Predef.String = _root_.scalapb.TextFormat.printToUnicodeString(this)
@@ -125,15 +124,15 @@ object RequestSignUp extends scalapb.GeneratedMessageCompanion[com.github.tozast
   implicit def messageCompanion: scalapb.GeneratedMessageCompanion[com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp] with scalapb.JavaProtoSupport[com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp, com.github.tozastation.clasickcoreapi.grpc.RequestSignUp] = this
   def toJavaProto(scalaPbSource: com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp): com.github.tozastation.clasickcoreapi.grpc.RequestSignUp = {
     val javaPbOut = com.github.tozastation.clasickcoreapi.grpc.RequestSignUp.newBuilder
-    javaPbOut.setUserName(scalaPbSource.userName)
+    javaPbOut.setName(scalaPbSource.name)
     javaPbOut.setPassword(scalaPbSource.password)
-    javaPbOut.setResultValue(scalaPbSource.result.value)
+    scalaPbSource.contact.map(com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact.toJavaProto).foreach(javaPbOut.setContact)
     javaPbOut.build
   }
   def fromJavaProto(javaPbSource: com.github.tozastation.clasickcoreapi.grpc.RequestSignUp): com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp = com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp(
-    userName = javaPbSource.getUserName,
+    name = javaPbSource.getName,
     password = javaPbSource.getPassword,
-    result = com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.fromValue(javaPbSource.getResultValue.intValue)
+    contact = if (javaPbSource.hasContact) Some(com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact.fromJavaProto(javaPbSource.getContact)) else _root_.scala.None
   )
   def fromFieldsMap(__fieldsMap: scala.collection.immutable.Map[_root_.com.google.protobuf.Descriptors.FieldDescriptor, _root_.scala.Any]): com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp = {
     _root_.scala.Predef.require(__fieldsMap.keys.forall(_.getContainingType() == javaDescriptor), "FieldDescriptor does not match message type.")
@@ -141,7 +140,7 @@ object RequestSignUp extends scalapb.GeneratedMessageCompanion[com.github.tozast
     com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp(
       __fieldsMap.getOrElse(__fields.get(0), "").asInstanceOf[_root_.scala.Predef.String],
       __fieldsMap.getOrElse(__fields.get(1), "").asInstanceOf[_root_.scala.Predef.String],
-      com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.fromValue(__fieldsMap.getOrElse(__fields.get(2), com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS.javaValueDescriptor).asInstanceOf[_root_.com.google.protobuf.Descriptors.EnumValueDescriptor].getNumber)
+      __fieldsMap.get(__fields.get(2)).asInstanceOf[_root_.scala.Option[com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact]]
     )
   }
   implicit def messageReads: _root_.scalapb.descriptors.Reads[com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp] = _root_.scalapb.descriptors.Reads{
@@ -150,36 +149,39 @@ object RequestSignUp extends scalapb.GeneratedMessageCompanion[com.github.tozast
       com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp(
         __fieldsMap.get(scalaDescriptor.findFieldByNumber(1).get).map(_.as[_root_.scala.Predef.String]).getOrElse(""),
         __fieldsMap.get(scalaDescriptor.findFieldByNumber(2).get).map(_.as[_root_.scala.Predef.String]).getOrElse(""),
-        com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.fromValue(__fieldsMap.get(scalaDescriptor.findFieldByNumber(3).get).map(_.as[_root_.scalapb.descriptors.EnumValueDescriptor]).getOrElse(com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS.scalaValueDescriptor).number)
+        __fieldsMap.get(scalaDescriptor.findFieldByNumber(3).get).flatMap(_.as[_root_.scala.Option[com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact]])
       )
     case _ => throw new RuntimeException("Expected PMessage")
   }
-  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = UserRpcProto.javaDescriptor.getMessageTypes.get(2)
-  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = UserRpcProto.scalaDescriptor.messages(2)
-  def messageCompanionForFieldNumber(__number: _root_.scala.Int): _root_.scalapb.GeneratedMessageCompanion[_] = throw new MatchError(__number)
-  lazy val nestedMessagesCompanions: Seq[_root_.scalapb.GeneratedMessageCompanion[_]] = Seq.empty
-  def enumCompanionForFieldNumber(__fieldNumber: _root_.scala.Int): _root_.scalapb.GeneratedEnumCompanion[_] = {
-    (__fieldNumber: @_root_.scala.unchecked) match {
-      case 3 => com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result
+  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = UserRpcProto.javaDescriptor.getMessageTypes.get(3)
+  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = UserRpcProto.scalaDescriptor.messages(3)
+  def messageCompanionForFieldNumber(__number: _root_.scala.Int): _root_.scalapb.GeneratedMessageCompanion[_] = {
+    var __out: _root_.scalapb.GeneratedMessageCompanion[_] = null
+    (__number: @_root_.scala.unchecked) match {
+      case 3 => __out = com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact
     }
+    __out
   }
+  lazy val nestedMessagesCompanions: Seq[_root_.scalapb.GeneratedMessageCompanion[_]] = Seq.empty
+  def enumCompanionForFieldNumber(__fieldNumber: _root_.scala.Int): _root_.scalapb.GeneratedEnumCompanion[_] = throw new MatchError(__fieldNumber)
   lazy val defaultInstance = com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp(
   )
   implicit class RequestSignUpLens[UpperPB](_l: _root_.scalapb.lenses.Lens[UpperPB, com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp]) extends _root_.scalapb.lenses.ObjectLens[UpperPB, com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp](_l) {
-    def userName: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.userName)((c_, f_) => c_.copy(userName = f_))
+    def name: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.name)((c_, f_) => c_.copy(name = f_))
     def password: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.password)((c_, f_) => c_.copy(password = f_))
-    def result: _root_.scalapb.lenses.Lens[UpperPB, com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result] = field(_.result)((c_, f_) => c_.copy(result = f_))
+    def contact: _root_.scalapb.lenses.Lens[UpperPB, com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact] = field(_.getContact)((c_, f_) => c_.copy(contact = Option(f_)))
+    def optionalContact: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Option[com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact]] = field(_.contact)((c_, f_) => c_.copy(contact = f_))
   }
-  final val USER_NAME_FIELD_NUMBER = 1
+  final val NAME_FIELD_NUMBER = 1
   final val PASSWORD_FIELD_NUMBER = 2
-  final val RESULT_FIELD_NUMBER = 3
+  final val CONTACT_FIELD_NUMBER = 3
   def of(
-    userName: _root_.scala.Predef.String,
+    name: _root_.scala.Predef.String,
     password: _root_.scala.Predef.String,
-    result: com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result
+    contact: _root_.scala.Option[com.github.tozastation.clasickcoreapi.grpc.user_rpc.Contact]
   ): _root_.com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp = _root_.com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignUp(
-    userName,
+    name,
     password,
-    result
+    contact
   )
 }

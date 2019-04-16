@@ -13,12 +13,6 @@ service UserRpc {
     };
 }
 
-// Result: レスポンスの結果
-enum Result {
-    SUCCESS = 0;
-    FAILED = 1;
-}
-
 /**
  * rpc : SignIn
  **/
@@ -28,7 +22,6 @@ message RequestSignIn {
 }
 message ResponseSignIn {
     string access_token = 1;
-    Result result = 2;
 }
 
 message Contact {
@@ -46,7 +39,6 @@ message RequestSignUp {
 }
 message ResponseSignUp {
     string access_token = 1;
-    Result result = 2;
 }
 
 message ResponseUser {
@@ -64,5 +56,4 @@ message RequestGetSingleUser {
 }
 message ResponseGetSingleUser {
     ResponseUser user = 1;
-    Result result = 2;
 }

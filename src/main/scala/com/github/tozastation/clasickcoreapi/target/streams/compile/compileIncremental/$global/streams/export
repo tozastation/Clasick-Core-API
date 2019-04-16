@@ -1,0 +1,1 @@
+scalac -classpath /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/target/scala-2.12/classes -bootclasspath /Users/tozastation/.sbt/boot/scala-2.12.7/lib/scala-library.jar /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala

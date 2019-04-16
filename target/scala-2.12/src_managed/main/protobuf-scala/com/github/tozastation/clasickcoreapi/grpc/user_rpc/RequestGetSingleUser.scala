@@ -5,6 +5,9 @@
 
 package com.github.tozastation.clasickcoreapi.grpc.user_rpc
 
+/** *
+  * rpc :GetSingleUser
+  */
 @SerialVersionUID(0L)
 final case class RequestGetSingleUser(
     userId: _root_.scala.Int = 0
@@ -98,8 +101,8 @@ object RequestGetSingleUser extends scalapb.GeneratedMessageCompanion[com.github
       )
     case _ => throw new RuntimeException("Expected PMessage")
   }
-  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = UserRpcProto.javaDescriptor.getMessageTypes.get(5)
-  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = UserRpcProto.scalaDescriptor.messages(5)
+  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = UserRpcProto.javaDescriptor.getMessageTypes.get(6)
+  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = UserRpcProto.scalaDescriptor.messages(6)
   def messageCompanionForFieldNumber(__number: _root_.scala.Int): _root_.scalapb.GeneratedMessageCompanion[_] = throw new MatchError(__number)
   lazy val nestedMessagesCompanions: Seq[_root_.scalapb.GeneratedMessageCompanion[_]] = Seq.empty
   def enumCompanionForFieldNumber(__fieldNumber: _root_.scala.Int): _root_.scalapb.GeneratedEnumCompanion[_] = throw new MatchError(__fieldNumber)

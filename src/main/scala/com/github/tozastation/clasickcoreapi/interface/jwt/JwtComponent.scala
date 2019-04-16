@@ -13,12 +13,16 @@ object JwtComponent {
       subject = Option(sub),
       audience = Option(Set("clasick-user")),
     ).toString
-    val key = Source.fromFile("./secret.key").getLines.mkString
+    val file = Source.fromResource("secret.key")
+    val key = file.getLines.mkString
+    file.close()
     Jwt.encode(claim, key, JwtAlgorithm.HS256)
   }
 
   def decodeJwt(token: String): Try[String] = {
-    val key = Source.fromFile("./secret.key").getLines.mkString
+    val file = Source.fromResource("secret.key")
+    val key = file.getLines.mkString
+    file.close()
     Jwt.decodeRaw(token, key, Seq(JwtAlgorithm.HS256))
   }
 }

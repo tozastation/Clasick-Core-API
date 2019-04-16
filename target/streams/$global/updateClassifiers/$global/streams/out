@@ -46,19 +46,23 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.thesamet.scalapb#lenses_2.12;0.9.0-RC1 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.thesamet.scalapb#lenses_2.12;0.9.0-RC1 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->default][0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.typesafe.slick#slick_2.12;3.3.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.typesafe.slick#slick_2.12;3.3.0 {compile=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: com.typesafe.slick#slick_2.12;3.3.0[0m
 [0m[[0m[0mdebug[0m] [0m[0m	found com.typesafe.slick#slick_2.12;3.3.0 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.objenesis#objenesis;1.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}[0m
@@ -146,6 +150,32 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.zaxxer#HikariCP;3.2.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: com.zaxxer#HikariCP;3.2.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m	found com.zaxxer#HikariCP;3.2.0 in sbt-chain[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.typesafe.slick#slick-hikaricp_2.12;3.3.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: com.typesafe.slick#slick-hikaricp_2.12;3.3.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m	found com.typesafe.slick#slick-hikaricp_2.12;3.3.0 in sbt-chain[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.springframework.security#spring-security-core;5.1.4.RELEASE {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.springframework.security#spring-security-core;5.1.4.RELEASE[0m
@@ -313,6 +343,21 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.typesafe.slick#slick-codegen_2.12;3.3.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: com.typesafe.slick#slick-codegen_2.12;3.3.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m	found com.typesafe.slick#slick-codegen_2.12;3.3.0 in sbt-chain[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.google.api.grpc#proto-google-common-protos;1.12.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: com.google.api.grpc#proto-google-common-protos;1.12.0[0m
@@ -859,12 +904,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->runtime(*)][0m
@@ -930,6 +979,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
@@ -1054,6 +1123,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
@@ -1467,12 +1548,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime->runtime(*)][0m
@@ -1538,6 +1623,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->compile][0m
@@ -1662,6 +1767,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->compile][0m
@@ -2079,12 +2196,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->runtime(*)][0m
@@ -2150,6 +2271,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
@@ -2274,6 +2415,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
@@ -2687,12 +2840,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime->runtime(*)][0m
@@ -2758,6 +2915,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->compile][0m
@@ -2882,6 +3059,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->compile][0m
@@ -3295,12 +3484,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [test->runtime(*)][0m
@@ -3366,6 +3559,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [test->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [test->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [test->compile][0m
@@ -3490,6 +3703,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [test->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [test->compile][0m
@@ -3930,12 +4155,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->runtime(*)][0m
@@ -4001,6 +4230,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
@@ -4125,6 +4374,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
@@ -4540,12 +4801,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile-internal->runtime(*)][0m
@@ -4611,6 +4876,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile-internal->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile-internal->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile-internal->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile-internal->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile-internal->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile-internal->compile][0m
@@ -4735,6 +5020,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile-internal->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile-internal->compile][0m
@@ -5152,12 +5449,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->runtime(*)][0m
@@ -5223,6 +5524,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
@@ -5347,6 +5668,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
@@ -5760,12 +6093,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime->runtime(*)][0m
@@ -5831,6 +6168,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->compile][0m
@@ -5955,6 +6312,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->compile][0m
@@ -6369,12 +6738,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime-internal->runtime(*)][0m
@@ -6440,6 +6813,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime-internal->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime-internal->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime-internal->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime-internal->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime-internal->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime-internal->compile][0m
@@ -6564,6 +6957,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime-internal->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime-internal->compile][0m
@@ -6982,12 +7387,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [compile->runtime(*)][0m
@@ -7053,6 +7462,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [compile->compile][0m
@@ -7177,6 +7606,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [compile->compile][0m
@@ -7590,12 +8031,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [runtime->runtime(*)][0m
@@ -7661,6 +8106,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [runtime->compile][0m
@@ -7785,6 +8250,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [runtime->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [runtime->compile][0m
@@ -8198,12 +8675,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [test->runtime(*)][0m
@@ -8269,6 +8750,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [test->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [test->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [test->compile][0m
@@ -8393,6 +8894,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [test->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [test->compile][0m
@@ -8808,12 +9321,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick_2.12;3.3.0 [test-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [test-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.objenesis#objenesis;1.0 [test-internal->runtime(*)][0m
@@ -8879,6 +9396,26 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [test-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [test-internal->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.checkerframework#checker-compat-qual;2.5.2 [test-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test-internal->runtime(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test-internal->master(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test-internal->compile(*)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.zaxxer#HikariCP;3.2.0 [test-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-hikaricp_2.12;3.3.0 [test-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [test-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [test-internal->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->org.springframework.security#spring-security-core;5.1.4.RELEASE [test-internal->compile][0m
@@ -9003,6 +9540,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [test-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [test-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->io.grpc#grpc-all;1.19.0 [test-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.typesafe.slick#slick-codegen_2.12;3.3.0 [test-internal->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [test-internal->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [test-internal->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->com.google.api.grpc#proto-google-common-protos;1.12.0 [test-internal->compile][0m
@@ -9441,78 +9990,87 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies default#clasick_core_api$sources;0.1->jline#jline;2.14.6 [scala-tool->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.objenesis#objenesis;1.0!objenesis.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#fastparse_2.12;1.0.0!fastparse_2.12.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.slick#slick_2.12;3.3.0!slick_2.12.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-netty;1.19.0!grpc-netty.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.slick#slick_2.12;3.3.0!slick_2.12.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.thesamet.scalapb#lenses_2.12;0.9.0-RC1!lenses_2.12.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.objenesis#objenesis;1.0!objenesis.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-protobuf;1.19.0!grpc-protobuf.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.auth#google-auth-library-credentials;0.9.0!google-auth-library-credentials.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.j2objc#j2objc-annotations;1.1!j2objc-annotations.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#sourcecode_2.12;0.1.4!sourcecode_2.12.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.checkerframework#checker-compat-qual;2.5.2!checker-compat-qual.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.8!scala-library.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework.security#spring-security-core;5.1.4.RELEASE!spring-security-core.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.checkerframework#checker-compat-qual;2.5.2!checker-compat-qual.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.zaxxer#HikariCP;3.2.0!HikariCP.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.slick#slick-hikaricp_2.12;3.3.0!slick-hikaricp_2.12.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe#config;1.3.2!config.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework.security#spring-security-core;5.1.4.RELEASE!spring-security-core.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-codec-http2;4.1.32.Final!netty-codec-http2.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.mockito#mockito-core;1.9.5!mockito-core.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-handler;4.1.32.Final!netty-handler.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.mockito#mockito-core;1.9.5!mockito-core.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.2!jsr305.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-buffer;4.1.32.Final!netty-buffer.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework#spring-core;5.1.5.RELEASE!spring-core.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.pauldijou#jwt-core_2.12;2.1.0!jwt-core_2.12.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.bouncycastle#bcprov-jdk15on;1.60!bcprov-jdk15on.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.2!reactive-streams.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.pauldijou#jwt-core_2.12;2.1.0!jwt-core_2.12.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.scala-logging#scala-logging_2.12;3.9.2!scala-logging_2.12.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-resolver;4.1.32.Final!netty-resolver.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-all;1.19.0!grpc-all.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /Users/tozastation/.ivy2/local/com.typesafe.slick/slick-codegen_2.12/3.3.0/srcs/slick-codegen_2.12-sources.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.12/3.3.0/slick-codegen_2.12-3.3.0-sources.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.api.grpc#proto-google-common-protos;1.12.0!proto-google-common-protos.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.guava#guava;26.0-android!guava.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.bouncycastle#bcpkix-jdk15on;1.60!bcpkix-jdk15on.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.code.gson#gson;2.7!gson.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework#spring-context;5.1.5.RELEASE!spring-context.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.codehaus.mojo#animal-sniffer-annotations;1.17!animal-sniffer-annotations.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#fastparse-utils_2.12;1.0.0!fastparse-utils_2.12.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-testing;1.19.0!grpc-testing.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.scala-logging#scala-logging_2.12;3.9.2!scala-logging_2.12.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework#spring-context;5.1.5.RELEASE!spring-context.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] mysql#mysql-connector-java;8.0.15!mysql-connector-java.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-okhttp;1.19.0!grpc-okhttp.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-core;1.19.0!grpc-core.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-codec;4.1.32.Final!netty-codec.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework#spring-aop;5.1.5.RELEASE!spring-aop.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-core;1.19.0!grpc-core.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okhttp#okhttp;2.5.0!okhttp.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-context;1.19.0!grpc-context.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework.security#spring-security-web;5.1.4.RELEASE!spring-security-web.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-context;1.19.0!grpc-context.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-common;4.1.32.Final!netty-common.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework#spring-web;5.1.5.RELEASE!spring-web.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework#spring-web;5.1.5.RELEASE!spring-web.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework#spring-beans;5.1.5.RELEASE!spring-beans.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] junit#junit;4.12!junit.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-codec-http;4.1.32.Final!netty-codec-http.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.protobuf.nano#protobuf-javanano;3.0.0-alpha-5!protobuf-javanano.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] junit#junit;4.12!junit.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework#spring-jcl;5.1.5.RELEASE!spring-jcl.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.protobuf.nano#protobuf-javanano;3.0.0-alpha-5!protobuf-javanano.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-protobuf-lite;1.19.0!grpc-protobuf-lite.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-stub;1.19.0!grpc-stub.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-auth;1.19.0!grpc-auth.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-transport;4.1.32.Final!netty-transport.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-stub;1.19.0!grpc-stub.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.thesamet.scalapb#scalapb-runtime_2.12;0.9.0-RC1!scalapb-runtime_2.12.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;3.7.0!protobuf-java.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okio#okio;1.13.0!okio.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.opencensus#opencensus-contrib-grpc-metrics;0.19.2!opencensus-contrib-grpc-metrics.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.thesamet.scalapb#scalapb-runtime-grpc_2.12;0.9.0-RC1!scalapb-runtime-grpc_2.12.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.springframework#spring-expression;5.1.5.RELEASE!spring-expression.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-protobuf-nano;1.19.0!grpc-protobuf-nano.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] ch.qos.logback#logback-core;1.2.3!logback-core.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-codec-socks;4.1.32.Final!netty-codec-socks.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.grpc#grpc-protobuf-nano;1.19.0!grpc-protobuf-nano.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-handler-proxy;4.1.32.Final!netty-handler-proxy.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-transport;4.1.32.Final!netty-transport.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.errorprone#error_prone_annotations;2.2.0!error_prone_annotations.jar(src)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.8!scala-compiler.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.opencensus#opencensus-api;0.19.2!opencensus-api.jar(src)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.8!scala-compiler.jar(src)[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 1581ms :: artifacts dl 22ms[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.12/3.3.0/slick-codegen_2.12-3.3.0-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.12/3.3.0/slick-codegen_2.12-3.3.0-sources.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.12/3.3.0/slick-codegen_2.12-3.3.0-sources.jar.sha1[0m
+[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.12/3.3.0/slick-codegen_2.12-3.3.0-sources.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.slick#slick-codegen_2.12;3.3.0!slick-codegen_2.12.jar(src) (712ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 2492ms :: artifacts dl 767ms[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for default#clasick_core_api$sources;0.1 compile produced in /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-compile.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for default#clasick_core_api$sources;0.1 runtime produced in /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-runtime.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for default#clasick_core_api$sources;0.1 test produced in /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-test.xml[0m
@@ -9533,4 +10091,4 @@
 [0m[[0m[0mdebug[0m] [0m[0m	report for default#clasick_core_api$sources;0.1 plugin produced in /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-plugin.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for default#clasick_core_api$sources;0.1 pom produced in /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-pom.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for default#clasick_core_api$sources;0.1 scala-tool produced in /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/scala-2.12/resolution-cache/reports/default-clasick_core_api$sources-scala-tool.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (1581ms resolve - 22ms download)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (2492ms resolve - 767ms download)[0m

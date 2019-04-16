@@ -17,7 +17,6 @@ private static final long serialVersionUID = 0L;
   }
   private ResponseSignIn() {
     accessToken_ = "";
-    result_ = 0;
   }
 
   @java.lang.Override
@@ -48,12 +47,6 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             accessToken_ = s;
-            break;
-          }
-          case 16: {
-            int rawValue = input.readEnum();
-
-            result_ = rawValue;
             break;
           }
           default: {
@@ -122,23 +115,6 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int RESULT_FIELD_NUMBER = 2;
-  private int result_;
-  /**
-   * <code>.user.Result result = 2;</code>
-   */
-  public int getResultValue() {
-    return result_;
-  }
-  /**
-   * <code>.user.Result result = 2;</code>
-   */
-  public com.github.tozastation.clasickcoreapi.grpc.Result getResult() {
-    @SuppressWarnings("deprecation")
-    com.github.tozastation.clasickcoreapi.grpc.Result result = com.github.tozastation.clasickcoreapi.grpc.Result.valueOf(result_);
-    return result == null ? com.github.tozastation.clasickcoreapi.grpc.Result.UNRECOGNIZED : result;
-  }
-
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -156,9 +132,6 @@ private static final long serialVersionUID = 0L;
     if (!getAccessTokenBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, accessToken_);
     }
-    if (result_ != com.github.tozastation.clasickcoreapi.grpc.Result.SUCCESS.getNumber()) {
-      output.writeEnum(2, result_);
-    }
     unknownFields.writeTo(output);
   }
 
@@ -170,10 +143,6 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (!getAccessTokenBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, accessToken_);
-    }
-    if (result_ != com.github.tozastation.clasickcoreapi.grpc.Result.SUCCESS.getNumber()) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, result_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -193,7 +162,6 @@ private static final long serialVersionUID = 0L;
     boolean result = true;
     result = result && getAccessToken()
         .equals(other.getAccessToken());
-    result = result && result_ == other.result_;
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -207,8 +175,6 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ACCESS_TOKEN_FIELD_NUMBER;
     hash = (53 * hash) + getAccessToken().hashCode();
-    hash = (37 * hash) + RESULT_FIELD_NUMBER;
-    hash = (53 * hash) + result_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -344,8 +310,6 @@ private static final long serialVersionUID = 0L;
       super.clear();
       accessToken_ = "";
 
-      result_ = 0;
-
       return this;
     }
 
@@ -373,7 +337,6 @@ private static final long serialVersionUID = 0L;
     public com.github.tozastation.clasickcoreapi.grpc.ResponseSignIn buildPartial() {
       com.github.tozastation.clasickcoreapi.grpc.ResponseSignIn result = new com.github.tozastation.clasickcoreapi.grpc.ResponseSignIn(this);
       result.accessToken_ = accessToken_;
-      result.result_ = result_;
       onBuilt();
       return result;
     }
@@ -425,9 +388,6 @@ private static final long serialVersionUID = 0L;
       if (!other.getAccessToken().isEmpty()) {
         accessToken_ = other.accessToken_;
         onChanged();
-      }
-      if (other.result_ != 0) {
-        setResultValue(other.getResultValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -523,51 +483,6 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       accessToken_ = value;
-      onChanged();
-      return this;
-    }
-
-    private int result_ = 0;
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public int getResultValue() {
-      return result_;
-    }
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public Builder setResultValue(int value) {
-      result_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public com.github.tozastation.clasickcoreapi.grpc.Result getResult() {
-      @SuppressWarnings("deprecation")
-      com.github.tozastation.clasickcoreapi.grpc.Result result = com.github.tozastation.clasickcoreapi.grpc.Result.valueOf(result_);
-      return result == null ? com.github.tozastation.clasickcoreapi.grpc.Result.UNRECOGNIZED : result;
-    }
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public Builder setResult(com.github.tozastation.clasickcoreapi.grpc.Result value) {
-      if (value == null) {
-        throw new NullPointerException();
-      }
-      
-      result_ = value.getNumber();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public Builder clearResult() {
-      
-      result_ = 0;
       onChanged();
       return this;
     }

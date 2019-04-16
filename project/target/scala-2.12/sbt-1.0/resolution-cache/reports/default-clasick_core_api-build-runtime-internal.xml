@@ -9,7 +9,7 @@
 		extra-sbtVersion="1.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190408135747"/>
+		date="20190416184018"/>
 	<dependencies>
 		<module organisation="com.thesamet.scalapb" name="compilerplugin_2.12">
 			<revision name="0.9.0-RC1" status="release" pubdate="20190310063534" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="21">
@@ -85,35 +85,35 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.sbt" name="sbt-native-packager">
-			<revision name="1.3.20" status="release" pubdate="20190329192152" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="7">
-				<metadata-artifact status="successful" details="" size="3545" time="1768" location="/Users/tozastation/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/ivy-1.3.20.xml" searched="true" original-local-location="/Users/tozastation/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/ivy-1.3.20.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.12/sbt_1.0/1.3.20/ivys/ivy.xml"/>
+			<revision name="1.3.20" status="release" pubdate="20190329192152" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="7">
+				<metadata-artifact status="no" details="" size="3545" time="0" location="/Users/tozastation/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/ivy-1.3.20.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.12/sbt_1.0/1.3.20/ivys/ivy.xml"/>
 				<caller organisation="default" name="clasick_core_api-build" conf="compile, runtime-internal, runtime, optional" rev="1.3.20" rev-constraint-default="1.3.20" rev-constraint-dynamic="1.3.20" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<artifacts>
-					<artifact name="sbt-native-packager" type="jar" ext="jar" status="successful" details="" size="793851" time="2702" location="/Users/tozastation/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/jars/sbt-native-packager-1.3.20.jar">
+					<artifact name="sbt-native-packager" type="jar" ext="jar" status="no" details="" size="793851" time="0" location="/Users/tozastation/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/jars/sbt-native-packager-1.3.20.jar">
 						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.12/sbt_1.0/1.3.20/jars/sbt-native-packager.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
-			<revision name="1.1.1" status="release" pubdate="20180927023248" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+			<revision name="1.1.1" status="release" pubdate="20180927023248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
-				<metadata-artifact status="successful" details="" size="2753" time="548" location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-1.1.1.xml" searched="true" original-local-location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-1.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.1/scala-xml_2.12-1.1.1.pom"/>
+				<metadata-artifact status="no" details="" size="3266" time="0" location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.1/scala-xml_2.12-1.1.1.pom"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-native-packager" conf="compile" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.3.20"/>
 				<artifacts>
-					<artifact name="scala-xml_2.12" type="bundle" ext="jar" status="successful" details="" size="553347" time="3048" location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.1.1.jar">
+					<artifact name="scala-xml_2.12" type="bundle" ext="jar" status="no" details="" size="553347" time="0" location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.1/scala-xml_2.12-1.1.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12">
-			<revision name="1.1.1" status="release" pubdate="20180609100928" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+			<revision name="1.1.1" status="release" pubdate="20180609100928" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
-				<metadata-artifact status="successful" details="" size="2191" time="1168" location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.1.1.xml" searched="true" original-local-location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.pom"/>
+				<metadata-artifact status="no" details="" size="2929" time="0" location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.pom"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-native-packager" conf="compile" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.3.20"/>
 				<artifacts>
-					<artifact name="scala-parser-combinators_2.12" type="bundle" ext="jar" status="successful" details="" size="226573" time="2665" location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.1.1.jar">
+					<artifact name="scala-parser-combinators_2.12" type="bundle" ext="jar" status="no" details="" size="226573" time="0" location="/Users/tozastation/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -171,43 +171,43 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.ant" name="ant">
-			<revision name="1.10.5" status="release" pubdate="20180710135403" resolver="public" artresolver="public" homepage="http://ant.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+			<revision name="1.10.5" status="release" pubdate="20180710135403" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="10470" time="477" location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant/ivy-1.10.5.xml" searched="true" original-local-location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant/ivy-1.10.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant/1.10.5/ant-1.10.5.pom"/>
+				<metadata-artifact status="no" details="" size="3574" time="0" location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant/ivy-1.10.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant/1.10.5/ant-1.10.5.pom"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-native-packager" conf="compile" rev="1.10.5" rev-constraint-default="1.10.5" rev-constraint-dynamic="1.10.5" callerrev="1.3.20"/>
 				<artifacts>
-					<artifact name="ant" type="jar" ext="jar" status="successful" details="" size="2216652" time="3857" location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant/jars/ant-1.10.5.jar">
+					<artifact name="ant" type="jar" ext="jar" status="no" details="" size="2216652" time="0" location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant/jars/ant-1.10.5.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ant/ant/1.10.5/ant-1.10.5.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.ant" name="ant-launcher">
-			<revision name="1.10.5" status="release" pubdate="20180710135752" resolver="public" artresolver="public" homepage="http://ant.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+			<revision name="1.10.5" status="release" pubdate="20180710135752" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="2336" time="472" location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant-launcher/ivy-1.10.5.xml" searched="true" original-local-location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant-launcher/ivy-1.10.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.5/ant-launcher-1.10.5.pom"/>
+				<metadata-artifact status="no" details="" size="2789" time="0" location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant-launcher/ivy-1.10.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.5/ant-launcher-1.10.5.pom"/>
 				<caller organisation="org.apache.ant" name="ant" conf="default, compile, runtime, master" rev="1.10.5" rev-constraint-default="1.10.5" rev-constraint-dynamic="1.10.5" callerrev="1.10.5"/>
 				<artifacts>
-					<artifact name="ant-launcher" type="jar" ext="jar" status="successful" details="" size="18827" time="1839" location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.10.5.jar">
+					<artifact name="ant-launcher" type="jar" ext="jar" status="no" details="" size="18827" time="0" location="/Users/tozastation/.ivy2/cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.10.5.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.5/ant-launcher-1.10.5.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-compress">
-			<revision name="1.18" status="release" pubdate="20180813162452" resolver="public" artresolver="public" homepage="https://commons.apache.org/proper/commons-compress/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+			<revision name="1.18" status="release" pubdate="20180813162452" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-compress/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
 				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="18228" time="586" location="/Users/tozastation/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.18.xml" searched="true" original-local-location="/Users/tozastation/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.18.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.18/commons-compress-1.18.pom"/>
+				<metadata-artifact status="no" details="" size="16134" time="0" location="/Users/tozastation/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.18/commons-compress-1.18.pom"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-native-packager" conf="compile" rev="1.18" rev-constraint-default="1.18" rev-constraint-dynamic="1.18" callerrev="1.3.20"/>
 				<artifacts>
-					<artifact name="commons-compress" type="jar" ext="jar" status="successful" details="" size="591748" time="2676" location="/Users/tozastation/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.18.jar">
+					<artifact name="commons-compress" type="jar" ext="jar" status="no" details="" size="591748" time="0" location="/Users/tozastation/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.18.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20190408135737" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20190416184008" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="clasick_core_api-build" conf="compile, runtime-internal, runtime, optional" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<artifacts>

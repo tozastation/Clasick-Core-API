@@ -41,7 +41,7 @@ case class AccessToken(value: String) extends MappedTo[String]
   *
   * @param value アイコンのパス
   */
-case class IconPath(value: String) extends MappedTo[String]
+case class UserIconPath(value: String) extends MappedTo[String]
 
 /**
   *
@@ -60,8 +60,8 @@ case class User(
                pass: UserPass,
                contact: Contact,
                accessToken: AccessToken,
-               iconPath: IconPath,
-               introduction: Introduction
+               userIconPath: Option[UserIconPath],
+               introduction: Option[Introduction]
                )
 
 
@@ -72,10 +72,10 @@ class Users(tag: Tag) extends Table[User](tag, "user") {
   def email = column[String]("email")
   def phone = column[String]("phone")
   def contact = (email, phone) <> (Contact.tupled, Contact.unapply)
-  def iconPath = column[IconPath]("icon_path")
-  def introduction = column[Introduction]("introduction")
+  def userIconPath = column[Option[UserIconPath]]("icon_path")
+  def introduction = column[Option[Introduction]]("introduction")
   def accessToken = column[AccessToken]("access_token")
-  def * = (id, name, pass, contact, accessToken, iconPath, introduction) <> (User.tupled, User.unapply)
+  def * = (id, name, pass, contact, accessToken, userIconPath, introduction) <> (User.tupled, User.unapply)
 }
 
 object Users extends TableQuery(new Users(_))
