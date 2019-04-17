@@ -5,7 +5,6 @@ import com.github.tozastation.clasickcoreapi.domain.model._
 import com.github.tozastation.clasickcoreapi.grpc.user_rpc.{RequestGetSingleUser, RequestSignIn, RequestSignUp, ResponseGetSingleUser, ResponseSignIn, ResponseSignUp, ResponseUser}
 import com.github.tozastation.clasickcoreapi.infrastructure.persistence.repository.MixInUserRepository
 import com.github.tozastation.clasickcoreapi.interface.jwt.JwtComponent
-
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
@@ -28,14 +27,22 @@ trait MixInUserService extends UsesUserService {
 object UserServiceImpl extends UserService with MixInUserRepository {
 
   override def createUser(requestSignUp: RequestSignUp): Future[ResponseSignUp] = {
-    val userId = UserId(value = 0)
-    val userName = UserName(value = requestSignUp.name)
-    val userPass = UserPass(value = requestSignUp.password)
-    val contact = Contact(email = requestSignUp.contact.get.email, phone = requestSignUp.contact.get.phoneNum)
-    // パスワードハッシュ化
-    val hashedPass = UserPass(value = userPass.value)
-    // Jwt生成
-    val accessToken = AccessToken(value = JwtComponent.createJwt(userName.value))
+    /**
+      * マッピング
+      */
+    val userId: UserId = UserId(value = 0)
+    val userName: UserName = UserName(value = requestSignUp.name)
+    val userPass: UserPass = UserPass(value = requestSignUp.password)
+    val contact: Contact = Contact(email = requestSignUp.contact.get.email, phone = requestSignUp.contact.get.phoneNum)
+    /**
+      * パスワードハッシュ化
+      */
+    val hashedPass: UserPass = UserPass(value = createHash(userPass.value))
+
+    /**
+      *  Jwt生成
+      */
+    val accessToken: AccessToken = AccessToken(value = JwtComponent.createJwt(userName.value))
     /**
       * SignUp時に，自己紹介とユーザアイコンは登録しない
       */
@@ -55,13 +62,12 @@ object UserServiceImpl extends UserService with MixInUserRepository {
   }
 
   override def checkExistMe(requestSignIn: RequestSignIn): Future[ResponseSignIn] = {
-    val userName = UserName(value = requestSignIn.name)
-    val userPass = UserPass(value = requestSignIn.password)
-    // maybeUser Future[Option[User]]
-    val maybeUser = userRepository.selectMe(
-      name = userName,
-      pass = userPass
-    )
+    /**
+      * マッピング
+      */
+    val userName: UserName = UserName(value = requestSignIn.name)
+    val userPass: UserPass = UserPass(value = requestSignIn.password)
+    val maybeUser = userRepository.selectMe(name = userName, pass = userPass)
     maybeUser.flatMap(
       user =>
         if (authenticate(requestSignIn.password, user.get.pass.value)) {
@@ -73,8 +79,8 @@ object UserServiceImpl extends UserService with MixInUserRepository {
   }
 
   override def getSingleUser(requestGetSingleUser: RequestGetSingleUser): Future[ResponseGetSingleUser] = {
-    val id = UserId(value = requestGetSingleUser.userId)
-    val maybeUser = userRepository.selectUser(id = id)
+    val userId: UserId = UserId(value = requestGetSingleUser.userId)
+    val maybeUser = userRepository.selectUser(id = userId)
     maybeUser.flatMap(
       user => Future(
         ResponseGetSingleUser(

@@ -1,1 +1,1 @@
-["com.github.tozastation.clasickcoreapi.server"]
+["com.github.tozastation.clasickcoreapi.infrastructure.persistence.component.InitDB","com.github.tozastation.clasickcoreapi.server"]

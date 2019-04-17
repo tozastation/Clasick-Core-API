@@ -3,6 +3,7 @@ name := "clasick_core_api"
 version := "0.1"
 
 scalaVersion := "2.12.8"
+cancelable in Global := true
 
 import scalapb.compiler.Version.protobufVersion
 
