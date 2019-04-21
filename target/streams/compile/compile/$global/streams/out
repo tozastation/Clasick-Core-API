@@ -1,2 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/project/target/.sbt-compilation-infos/clasick_core_api-compile/.sbt-idea-lock ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/project/target/.sbt-compilation-infos/clasick_core_api-compile/.sbt-idea-lock.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/Server.scala:3:17: imported `Server' is permanently hidden by definition of object Server in package clasickcoreapi[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport io.grpc.{Server, ServerBuilder, ServerInterceptors}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

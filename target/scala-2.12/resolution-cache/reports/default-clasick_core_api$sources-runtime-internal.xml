@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, protobuf, universal, universal-docs, universal-src, docker, windows, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190421133755"/>
+		date="20190421150347"/>
 	<dependencies>
 		<module organisation="com.thesamet.scalapb" name="scalapb-runtime-grpc_2.12">
 			<revision name="0.9.0-RC1" status="release" pubdate="20190310063510" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">

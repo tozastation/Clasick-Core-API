@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tozastation",
+  "private_key_id": "49059c216e1d91bfd96d22cf4cbea6ea0e34fc5e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1Fvo2I2SM1D1C\nVQgmEUgivdcYlxJwGoJmszoHijupN/MQVCBPu5iARJS1far1yDMc/7o+dAL9XkZm\nId48vylsQEy90QuqrRXDM4RypxARTuOW2zAQb9kv/h3J4VOuUmzxNbruzWUcrQgH\neLXH/rZmrLkHGQruIA4854MGfJqMUujQwE3dxZX/xKJ9MfOgh2y/bFsOziHzDuf9\n/iO059z3mhdqSH65GXULqJsmrXiRXRdlKoQnDCOut7GJm+EKc/Up8Xbf7mN2F++z\nytdAljVEqBjNa4frbge6Sdq4SKgb8BCF4XFSSc3fM+ZoxkUCDwY6f5jxjHyiUV/H\n5r7mo6T/AgMBAAECggEATTVcvNRePIUJEUz7ym832Egke0F+BPnoey0TIr/XLBDE\nu0OC+zu6i4Wx+ad4yo3u7QBDQflohOo7DbSG8lN2r8bCcXO9i6l8S9udLtz3xslh\n06HkXj2x1fp8bOR7LynJdRY5ezNrVsyXTcgziO+aiTA/Oz18IYbdSy5R+OQLaKQA\nUKTUc88qOz98eeRbYhS96WM/RfPSpq8fIK9QG7uanQ3FkWUho5yQx3DljbjkV9gq\n2cI+JlZGsEsQ2f+LLaCY+FeomHuLT1uNq+KeMiK99YQz5OCL6FBLgnntt4+oHe1U\n8qieDvES1yPxScIW7WN/Sr2hgpmEuyb2JuCByuDEcQKBgQDtb1itvsY1VXyGbBNp\nGlxPMGwk4gbrctetnHTsPTR+Wx88rm37Bl03IqvDt1kFFeBnYhRT0pfrqABcj8NL\nCU8p6S+6eGhlVJKohr/+e4hC+3zICpUoj6vc/YGfN47RWeXagk1X2N/ZLLL0igQm\nXobKdT3kzPsyBj/cTrSiqSynNQKBgQDDP8nnUi3Ylv1L7xpaBG+JPuEOKdFp5ONY\nES7Dhi3S0F53Ikt4bB0wVQuZ71pxPXmfAiRj9e/EFk/UUNMrcQxmUUwbk4RrNBfI\n4EN3VfxySuiRV5W82zKe9RiPxy+pvZLvKAvuA7qZroCASNJGXoomtuaYmaoprQVH\nnIk7tRz94wKBgQDlPH2XsfrX/2MsvSe4b/Tzl8KxkXAw3j4Rpl7Uvvrxi7SK97XD\niI9y7gx794cA+/AeoHkTvN1kbl17AGoDBkfiJPspw5q3SoIWJ5Mydb5HPVtqH52G\n/b9mq3L8b715rpvW7bsSt5bXrOpSYvZCvTzSN4O8ZZOY5qO9ZlfMPB2aiQKBgQCq\nAZjj+gJBXPcgbwka6FHVxxJfKrpU4h+yRwPY67Rqo1Qdl5bvO/QOaX64gljV0Rld\nAph9EV+79VF9JQM6CC0ryg3i1Qev8KPlHKCiABTXz7HBG+odjx78mZzRVDaELbUK\n2GvKyyRnPDJXgRDWhOr12rvek64+q5C1Ue+MNZ8Q0QKBgEq+h6M6CIAbPQYsF3bv\nLqBK0tVwLVm4sFUZddhu37UpOYBpGIjbA4wsTu+hts/ZNbMr2X/4dB8CRJiroibF\nARlp7XJDi9meFgobxNFIgaHEfeZ8soZBj9EfES2dytOzd9tA6ZhNxR7I/3nk1iHu\nvIahI69TvJCp/axZa5QMaqBU\n-----END PRIVATE KEY-----\n",
+  "client_email": "clasick-dev-db@tozastation.iam.gserviceaccount.com",
+  "client_id": "107527098266837743551",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/clasick-dev-db%40tozastation.iam.gserviceaccount.com"
+}

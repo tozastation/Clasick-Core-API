@@ -4,7 +4,6 @@ COPY opt /opt
 USER root
 RUN ["chmod", "-R", "u=rX,g=rX", "/opt/docker"]
 RUN ["chmod", "u+x,g+x", "/opt/docker/bin/clasick_core_api"]
-RUN ["chmod", "u+x,g+x", "/opt/docker/bin/server"]
 
 FROM openjdk:latest
 LABEL MAINTAINER="tozastation <b1016031@fun.ac.jp>"
@@ -14,5 +13,5 @@ WORKDIR /opt/docker
 COPY --from=stage0 --chown=demiourgos728:root /opt/docker /opt/docker
 EXPOSE 8080
 USER 1001
-ENTRYPOINT ["/opt/docker/bin/clasick_core_api"]
+ENTRYPOINT ["bin/clasick_core_api"]
 CMD []
