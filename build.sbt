@@ -3,6 +3,7 @@ name := "clasick_core_api"
 version := "0.1"
 
 scalaVersion := "2.12.8"
+cancelable in Global := true
 
 import scalapb.compiler.Version.protobufVersion
 
@@ -17,6 +18,8 @@ libraryDependencies ++= Seq(
     "com.thesamet.scalapb" %% "scalapb-runtime-grpc" % scalapb.compiler.Version.scalapbVersion,
     "io.grpc" % "grpc-all" % scalapb.compiler.Version.grpcJavaVersion,
     "com.typesafe.slick" %% "slick" % "3.3.0",
+    "com.typesafe.slick" %% "slick-hikaricp" % "3.3.0",
+    "com.typesafe.slick" %% "slick-codegen" % "3.3.0",
     "mysql" % "mysql-connector-java" % "8.0.15",
     "org.springframework.security" % "spring-security-web" % "5.1.4.RELEASE",
     "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
@@ -25,3 +28,14 @@ libraryDependencies ++= Seq(
 )
 
 enablePlugins(JavaAppPackaging)
+enablePlugins(DockerPlugin)
+
+// Dockerfileに書く内容
+packageName in Docker := "clasick-core-api"
+version in Docker := "1.0"
+mainClass in Compile := Some("com.github.tozastation.clasickcoreapi.Server")
+dockerRepository := Some("tozastation")
+maintainer in Docker := "tozastation <b1016031@fun.ac.jp>"
+dockerExposedPorts := List(8080)
+dockerBaseImage := "openjdk:latest"
+dockerCmd := Nil

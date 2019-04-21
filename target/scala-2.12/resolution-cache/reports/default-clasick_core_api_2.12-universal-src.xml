@@ -6,8 +6,8 @@
 		module="clasick_core_api_2.12"
 		revision="0.1"
 		conf="universal-src"
-		confs="compile, runtime, test, provided, optional, protobuf, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190408135857"/>
+		confs="compile, runtime, test, provided, optional, protobuf, universal, universal-docs, universal-src, docker, windows, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20190421132105"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

@@ -8,14 +8,14 @@ public interface RequestSignInOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string user_name = 1;</code>
+   * <code>string name = 1;</code>
    */
-  java.lang.String getUserName();
+  java.lang.String getName();
   /**
-   * <code>string user_name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
-      getUserNameBytes();
+      getNameBytes();
 
   /**
    * <code>string password = 2;</code>

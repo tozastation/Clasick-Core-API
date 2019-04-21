@@ -25,6 +25,11 @@ public final class UserProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_user_ResponseSignIn_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_user_Contact_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_user_Contact_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_user_RequestSignUp_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -58,26 +63,25 @@ public final class UserProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016user_rpc.proto\022\004user\"4\n\rRequestSignIn\022" +
-      "\021\n\tuser_name\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\"D\n\016" +
-      "ResponseSignIn\022\024\n\014access_token\030\001 \001(\t\022\034\n\006" +
-      "result\030\002 \001(\0162\014.user.Result\"R\n\rRequestSig" +
-      "nUp\022\021\n\tuser_name\030\001 \001(\t\022\020\n\010password\030\002 \001(\t" +
-      "\022\034\n\006result\030\003 \001(\0162\014.user.Result\"D\n\016Respon" +
-      "seSignUp\022\024\n\014access_token\030\001 \001(\t\022\034\n\006result" +
-      "\030\002 \001(\0162\014.user.Result\"2\n\014ResponseUser\022\017\n\007" +
-      "user_id\030\001 \001(\005\022\021\n\tuser_name\030\002 \001(\t\"\'\n\024Requ" +
-      "estGetSingleUser\022\017\n\007user_id\030\001 \001(\005\"W\n\025Res" +
-      "ponseGetSingleUser\022 \n\004user\030\001 \001(\0132\022.user." +
-      "ResponseUser\022\034\n\006result\030\002 \001(\0162\014.user.Resu" +
-      "lt*!\n\006Result\022\013\n\007SUCCESS\020\000\022\n\n\006FAILED\020\0012\303\001" +
-      "\n\007UserRpc\0225\n\006SignIn\022\023.user.RequestSignIn" +
-      "\032\024.user.ResponseSignIn\"\000\0225\n\006SignUp\022\023.use" +
-      "r.RequestSignUp\032\024.user.ResponseSignUp\"\000\022" +
-      "J\n\rGetSingleUser\022\032.user.RequestGetSingle" +
-      "User\032\033.user.ResponseGetSingleUser\"\000B9\n*c" +
-      "om.github.tozastation.clasickcoreapi.grp" +
-      "cB\tUserProtoP\001b\006proto3"
+      "\n\016user_rpc.proto\022\004user\"/\n\rRequestSignIn\022" +
+      "\014\n\004name\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\"&\n\016Respo" +
+      "nseSignIn\022\024\n\014access_token\030\001 \001(\t\"+\n\007Conta" +
+      "ct\022\021\n\tphone_num\030\001 \001(\t\022\r\n\005email\030\002 \001(\t\"O\n\r" +
+      "RequestSignUp\022\014\n\004name\030\001 \001(\t\022\020\n\010password\030" +
+      "\002 \001(\t\022\036\n\007contact\030\003 \001(\0132\r.user.Contact\"&\n" +
+      "\016ResponseSignUp\022\024\n\014access_token\030\001 \001(\t\"[\n" +
+      "\014ResponseUser\022\017\n\007user_id\030\001 \001(\005\022\021\n\tuser_n" +
+      "ame\030\002 \001(\t\022\021\n\ticon_path\030\003 \001(\t\022\024\n\014introduc" +
+      "tion\030\004 \001(\t\"\'\n\024RequestGetSingleUser\022\017\n\007us" +
+      "er_id\030\001 \001(\005\"9\n\025ResponseGetSingleUser\022 \n\004" +
+      "user\030\001 \001(\0132\022.user.ResponseUser2\303\001\n\007UserR" +
+      "pc\0225\n\006SignIn\022\023.user.RequestSignIn\032\024.user" +
+      ".ResponseSignIn\"\000\0225\n\006SignUp\022\023.user.Reque" +
+      "stSignUp\032\024.user.ResponseSignUp\"\000\022J\n\rGetS" +
+      "ingleUser\022\032.user.RequestGetSingleUser\032\033." +
+      "user.ResponseGetSingleUser\"\000B9\n*com.gith" +
+      "ub.tozastation.clasickcoreapi.grpcB\tUser" +
+      "ProtoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -96,43 +100,49 @@ public final class UserProto {
     internal_static_user_RequestSignIn_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_user_RequestSignIn_descriptor,
-        new java.lang.String[] { "UserName", "Password", });
+        new java.lang.String[] { "Name", "Password", });
     internal_static_user_ResponseSignIn_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_user_ResponseSignIn_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_user_ResponseSignIn_descriptor,
-        new java.lang.String[] { "AccessToken", "Result", });
-    internal_static_user_RequestSignUp_descriptor =
+        new java.lang.String[] { "AccessToken", });
+    internal_static_user_Contact_descriptor =
       getDescriptor().getMessageTypes().get(2);
+    internal_static_user_Contact_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_user_Contact_descriptor,
+        new java.lang.String[] { "PhoneNum", "Email", });
+    internal_static_user_RequestSignUp_descriptor =
+      getDescriptor().getMessageTypes().get(3);
     internal_static_user_RequestSignUp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_user_RequestSignUp_descriptor,
-        new java.lang.String[] { "UserName", "Password", "Result", });
+        new java.lang.String[] { "Name", "Password", "Contact", });
     internal_static_user_ResponseSignUp_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_user_ResponseSignUp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_user_ResponseSignUp_descriptor,
-        new java.lang.String[] { "AccessToken", "Result", });
+        new java.lang.String[] { "AccessToken", });
     internal_static_user_ResponseUser_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_user_ResponseUser_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_user_ResponseUser_descriptor,
-        new java.lang.String[] { "UserId", "UserName", });
+        new java.lang.String[] { "UserId", "UserName", "IconPath", "Introduction", });
     internal_static_user_RequestGetSingleUser_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_user_RequestGetSingleUser_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_user_RequestGetSingleUser_descriptor,
         new java.lang.String[] { "UserId", });
     internal_static_user_ResponseGetSingleUser_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_user_ResponseGetSingleUser_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_user_ResponseGetSingleUser_descriptor,
-        new java.lang.String[] { "User", "Result", });
+        new java.lang.String[] { "User", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

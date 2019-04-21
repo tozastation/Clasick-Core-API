@@ -1,6 +1,7 @@
 package com.github.tozastation.clasickcoreapi
 
 import io.grpc.{Server, ServerBuilder, ServerInterceptors}
+
 import scala.concurrent.ExecutionContext
 import java.util.concurrent.Executors
 import com.github.tozastation.clasickcoreapi.application.UserApplicationImpl

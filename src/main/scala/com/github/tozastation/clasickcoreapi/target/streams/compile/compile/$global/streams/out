@@ -1,0 +1,40 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:3:11: object grpc is not a member of package io[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.grpc.{Server, ServerBuilder, ServerInterceptors}[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:6:46: object application is not a member of package com.github.tozastation.clasickcoreapi[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.github.tozastation.clasickcoreapi.application.UserApplicationImpl[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:7:46: object grpc is not a member of package com.github.tozastation.clasickcoreapi[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.github.tozastation.clasickcoreapi.grpc.user_rpc.UserRpcGrpc[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:8:46: object interface is not a member of package com.github.tozastation.clasickcoreapi[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.github.tozastation.clasickcoreapi.interface.util.util[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:21:62: not found: type util[0m
+[0m[[0m[31merror[0m] [0m[0mclass GrpcServer(executionContext: ExecutionContext) extends util {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:24:23: not found: type Server[0m
+[0m[[0m[31merror[0m] [0m[0m  private var server: Server = _[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:27:14: not found: value ServerBuilder[0m
+[0m[[0m[31merror[0m] [0m[0m    server = ServerBuilder.forPort(port).addService([0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:28:7: not found: value ServerInterceptors[0m
+[0m[[0m[31merror[0m] [0m[0m      ServerInterceptors.intercept([0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:29:9: not found: value UserRpcGrpc[0m
+[0m[[0m[31merror[0m] [0m[0m        UserRpcGrpc.bindService(UserApplicationImpl, executionContext)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:29:33: not found: value UserApplicationImpl[0m
+[0m[[0m[31merror[0m] [0m[0m        UserRpcGrpc.bindService(UserApplicationImpl, executionContext)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:32:5: not found: value logger[0m
+[0m[[0m[31merror[0m] [0m[0m    logger.info("gRPC server started, listening on " + port)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:35:7: not found: value logger[0m
+[0m[[0m[31merror[0m] [0m[0m      logger.info("*** shutting down gPRC server since JVM is shutting down")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tozastation/go/src/github.com/tozastation/clasick_core_api/src/main/scala/com/github/tozastation/clasickcoreapi/server.scala:42:7: not found: value logger[0m
+[0m[[0m[31merror[0m] [0m[0m      logger.info("*** gRPC server shutdown")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m13 errors found[0m

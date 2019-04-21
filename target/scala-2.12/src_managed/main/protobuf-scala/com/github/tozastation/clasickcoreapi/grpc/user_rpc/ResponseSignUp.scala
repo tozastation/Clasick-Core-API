@@ -7,8 +7,7 @@ package com.github.tozastation.clasickcoreapi.grpc.user_rpc
 
 @SerialVersionUID(0L)
 final case class ResponseSignUp(
-    accessToken: _root_.scala.Predef.String = "",
-    result: com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result = com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS
+    accessToken: _root_.scala.Predef.String = ""
     ) extends scalapb.GeneratedMessage with scalapb.Message[ResponseSignUp] with scalapb.lenses.Updatable[ResponseSignUp] {
     @transient
     private[this] var __serializedSizeCachedValue: _root_.scala.Int = 0
@@ -19,13 +18,6 @@ final case class ResponseSignUp(
         val __value = accessToken
         if (__value != "") {
           __size += _root_.com.google.protobuf.CodedOutputStream.computeStringSize(1, __value)
-        }
-      };
-      
-      {
-        val __value = result
-        if (__value != com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS) {
-          __size += _root_.com.google.protobuf.CodedOutputStream.computeEnumSize(2, __value.value)
         }
       };
       __size
@@ -45,16 +37,9 @@ final case class ResponseSignUp(
           _output__.writeString(1, __v)
         }
       };
-      {
-        val __v = result
-        if (__v != com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS) {
-          _output__.writeEnum(2, __v.value)
-        }
-      };
     }
     def mergeFrom(`_input__`: _root_.com.google.protobuf.CodedInputStream): com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp = {
       var __accessToken = this.accessToken
-      var __result = this.result
       var _done__ = false
       while (!_done__) {
         val _tag__ = _input__.readTag()
@@ -62,27 +47,19 @@ final case class ResponseSignUp(
           case 0 => _done__ = true
           case 10 =>
             __accessToken = _input__.readString()
-          case 16 =>
-            __result = com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.fromValue(_input__.readEnum())
           case tag => _input__.skipField(tag)
         }
       }
       com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp(
-          accessToken = __accessToken,
-          result = __result
+          accessToken = __accessToken
       )
     }
     def withAccessToken(__v: _root_.scala.Predef.String): ResponseSignUp = copy(accessToken = __v)
-    def withResult(__v: com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result): ResponseSignUp = copy(result = __v)
     def getFieldByNumber(__fieldNumber: _root_.scala.Int): _root_.scala.Any = {
       (__fieldNumber: @_root_.scala.unchecked) match {
         case 1 => {
           val __t = accessToken
           if (__t != "") __t else null
-        }
-        case 2 => {
-          val __t = result.javaValueDescriptor
-          if (__t.getNumber() != 0) __t else null
         }
       }
     }
@@ -90,7 +67,6 @@ final case class ResponseSignUp(
       _root_.scala.Predef.require(__field.containingMessage eq companion.scalaDescriptor)
       (__field.number: @_root_.scala.unchecked) match {
         case 1 => _root_.scalapb.descriptors.PString(accessToken)
-        case 2 => _root_.scalapb.descriptors.PEnum(result.scalaValueDescriptor)
       }
     }
     def toProtoString: _root_.scala.Predef.String = _root_.scalapb.TextFormat.printToUnicodeString(this)
@@ -102,52 +78,40 @@ object ResponseSignUp extends scalapb.GeneratedMessageCompanion[com.github.tozas
   def toJavaProto(scalaPbSource: com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp): com.github.tozastation.clasickcoreapi.grpc.ResponseSignUp = {
     val javaPbOut = com.github.tozastation.clasickcoreapi.grpc.ResponseSignUp.newBuilder
     javaPbOut.setAccessToken(scalaPbSource.accessToken)
-    javaPbOut.setResultValue(scalaPbSource.result.value)
     javaPbOut.build
   }
   def fromJavaProto(javaPbSource: com.github.tozastation.clasickcoreapi.grpc.ResponseSignUp): com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp = com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp(
-    accessToken = javaPbSource.getAccessToken,
-    result = com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.fromValue(javaPbSource.getResultValue.intValue)
+    accessToken = javaPbSource.getAccessToken
   )
   def fromFieldsMap(__fieldsMap: scala.collection.immutable.Map[_root_.com.google.protobuf.Descriptors.FieldDescriptor, _root_.scala.Any]): com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp = {
     _root_.scala.Predef.require(__fieldsMap.keys.forall(_.getContainingType() == javaDescriptor), "FieldDescriptor does not match message type.")
     val __fields = javaDescriptor.getFields
     com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp(
-      __fieldsMap.getOrElse(__fields.get(0), "").asInstanceOf[_root_.scala.Predef.String],
-      com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.fromValue(__fieldsMap.getOrElse(__fields.get(1), com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS.javaValueDescriptor).asInstanceOf[_root_.com.google.protobuf.Descriptors.EnumValueDescriptor].getNumber)
+      __fieldsMap.getOrElse(__fields.get(0), "").asInstanceOf[_root_.scala.Predef.String]
     )
   }
   implicit def messageReads: _root_.scalapb.descriptors.Reads[com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp] = _root_.scalapb.descriptors.Reads{
     case _root_.scalapb.descriptors.PMessage(__fieldsMap) =>
       _root_.scala.Predef.require(__fieldsMap.keys.forall(_.containingMessage == scalaDescriptor), "FieldDescriptor does not match message type.")
       com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp(
-        __fieldsMap.get(scalaDescriptor.findFieldByNumber(1).get).map(_.as[_root_.scala.Predef.String]).getOrElse(""),
-        com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.fromValue(__fieldsMap.get(scalaDescriptor.findFieldByNumber(2).get).map(_.as[_root_.scalapb.descriptors.EnumValueDescriptor]).getOrElse(com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result.SUCCESS.scalaValueDescriptor).number)
+        __fieldsMap.get(scalaDescriptor.findFieldByNumber(1).get).map(_.as[_root_.scala.Predef.String]).getOrElse("")
       )
     case _ => throw new RuntimeException("Expected PMessage")
   }
-  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = UserRpcProto.javaDescriptor.getMessageTypes.get(3)
-  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = UserRpcProto.scalaDescriptor.messages(3)
+  def javaDescriptor: _root_.com.google.protobuf.Descriptors.Descriptor = UserRpcProto.javaDescriptor.getMessageTypes.get(4)
+  def scalaDescriptor: _root_.scalapb.descriptors.Descriptor = UserRpcProto.scalaDescriptor.messages(4)
   def messageCompanionForFieldNumber(__number: _root_.scala.Int): _root_.scalapb.GeneratedMessageCompanion[_] = throw new MatchError(__number)
   lazy val nestedMessagesCompanions: Seq[_root_.scalapb.GeneratedMessageCompanion[_]] = Seq.empty
-  def enumCompanionForFieldNumber(__fieldNumber: _root_.scala.Int): _root_.scalapb.GeneratedEnumCompanion[_] = {
-    (__fieldNumber: @_root_.scala.unchecked) match {
-      case 2 => com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result
-    }
-  }
+  def enumCompanionForFieldNumber(__fieldNumber: _root_.scala.Int): _root_.scalapb.GeneratedEnumCompanion[_] = throw new MatchError(__fieldNumber)
   lazy val defaultInstance = com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp(
   )
   implicit class ResponseSignUpLens[UpperPB](_l: _root_.scalapb.lenses.Lens[UpperPB, com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp]) extends _root_.scalapb.lenses.ObjectLens[UpperPB, com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp](_l) {
     def accessToken: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.accessToken)((c_, f_) => c_.copy(accessToken = f_))
-    def result: _root_.scalapb.lenses.Lens[UpperPB, com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result] = field(_.result)((c_, f_) => c_.copy(result = f_))
   }
   final val ACCESS_TOKEN_FIELD_NUMBER = 1
-  final val RESULT_FIELD_NUMBER = 2
   def of(
-    accessToken: _root_.scala.Predef.String,
-    result: com.github.tozastation.clasickcoreapi.grpc.user_rpc.Result
+    accessToken: _root_.scala.Predef.String
   ): _root_.com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp = _root_.com.github.tozastation.clasickcoreapi.grpc.user_rpc.ResponseSignUp(
-    accessToken,
-    result
+    accessToken
   )
 }

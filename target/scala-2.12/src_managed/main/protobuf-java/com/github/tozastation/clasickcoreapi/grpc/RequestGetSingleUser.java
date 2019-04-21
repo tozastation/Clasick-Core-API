@@ -4,6 +4,11 @@
 package com.github.tozastation.clasickcoreapi.grpc;
 
 /**
+ * <pre>
+ **
+ * rpc :GetSingleUser
+ * </pre>
+ *
  * Protobuf type {@code user.RequestGetSingleUser}
  */
 public  final class RequestGetSingleUser extends
@@ -246,6 +251,11 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
+   * <pre>
+   **
+   * rpc :GetSingleUser
+   * </pre>
+   *
    * Protobuf type {@code user.RequestGetSingleUser}
    */
   public static final class Builder extends

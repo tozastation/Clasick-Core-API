@@ -6,11 +6,11 @@
 		module="clasick_core_api$sources"
 		revision="0.1"
 		conf="test-internal"
-		confs="compile, runtime, test, provided, optional, protobuf, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190408135858"/>
+		confs="compile, runtime, test, provided, optional, protobuf, universal, universal-docs, universal-src, docker, windows, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20190421133755"/>
 	<dependencies>
 		<module organisation="com.thesamet.scalapb" name="scalapb-runtime-grpc_2.12">
-			<revision name="0.9.0-RC1" status="release" pubdate="20190310063510" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="60">
+			<revision name="0.9.0-RC1" status="release" pubdate="20190310063510" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3378" time="0" location="/Users/tozastation/.ivy2/cache/com.thesamet.scalapb/scalapb-runtime-grpc_2.12/ivy-0.9.0-RC1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime-grpc_2.12/0.9.0-RC1/scalapb-runtime-grpc_2.12-0.9.0-RC1.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.9.0-RC1" rev-constraint-default="0.9.0-RC1" rev-constraint-dynamic="0.9.0-RC1" callerrev="0.1"/>
@@ -22,7 +22,7 @@
 			</revision>
 		</module>
 		<module organisation="com.thesamet.scalapb" name="scalapb-runtime_2.12">
-			<revision name="0.9.0-RC1" status="release" pubdate="20190310063505" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="56">
+			<revision name="0.9.0-RC1" status="release" pubdate="20190310063505" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="59">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3750" time="0" location="/Users/tozastation/.ivy2/cache/com.thesamet.scalapb/scalapb-runtime_2.12/ivy-0.9.0-RC1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime_2.12/0.9.0-RC1/scalapb-runtime_2.12-0.9.0-RC1.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.9.0-RC1" rev-constraint-default="0.9.0-RC1" rev-constraint-dynamic="0.9.0-RC1" callerrev="0.1"/>
@@ -34,7 +34,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.protobuf" name="protobuf-java">
-			<revision name="3.7.0" status="release" pubdate="20190307080637" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="57">
+			<revision name="3.7.0" status="release" pubdate="20190307080637" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="60">
 				<license name="3-Clause BSD License" url="https://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="5521" time="0" location="/Users/tozastation/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-3.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.7.0" rev-constraint-default="3.7.0" rev-constraint-dynamic="3.7.0" callerrev="0.1"/>
@@ -46,7 +46,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.12.8" status="release" pubdate="20181204191524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+			<revision name="2.12.8" status="release" pubdate="20181204191524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2828" time="0" location="/Users/tozastation/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.12.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/"/>
@@ -58,7 +58,7 @@
 			</revision>
 		</module>
 		<module organisation="org.springframework.security" name="spring-security-web">
-			<revision name="5.1.4.RELEASE" status="release" pubdate="20190214030303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spring.io/spring-security" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="41">
+			<revision name="5.1.4.RELEASE" status="release" pubdate="20190214030303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spring.io/spring-security" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="44">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7657" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework.security/spring-security-web/ivy-5.1.4.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/security/spring-security-web/5.1.4.RELEASE/spring-security-web-5.1.4.RELEASE.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="5.1.4.RELEASE" rev-constraint-default="5.1.4.RELEASE" rev-constraint-dynamic="5.1.4.RELEASE" callerrev="0.1"/>
@@ -70,7 +70,7 @@
 			</revision>
 		</module>
 		<module organisation="org.springframework" name="spring-web">
-			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152746" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152746" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="9097" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework/spring-web/ivy-5.1.5.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="5.1.5.RELEASE" rev-constraint-default="5.1.5.RELEASE" rev-constraint-dynamic="5.1.5.RELEASE" callerrev="0.1"/>
@@ -82,7 +82,7 @@
 			</revision>
 		</module>
 		<module organisation="mysql" name="mysql-connector-java">
-			<revision name="8.0.15" status="release" pubdate="20190128132113" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="35">
+			<revision name="8.0.15" status="release" pubdate="20190128132113" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="38">
 				<license name="The GNU General Public License, v2 with FOSS exception"/>
 				<metadata-artifact status="no" details="" size="2679" time="0" location="/Users/tozastation/.ivy2/cache/mysql/mysql-connector-java/ivy-8.0.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="8.0.15" rev-constraint-default="8.0.15" rev-constraint-dynamic="8.0.15" callerrev="0.1"/>
@@ -93,8 +93,20 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="com.typesafe.slick" name="slick-codegen_2.12">
+			<revision name="3.3.0" status="release" pubdate="20190131004933" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="27">
+				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2888" time="0" location="/Users/tozastation/.ivy2/cache/com.typesafe.slick/slick-codegen_2.12/ivy-3.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.12/3.3.0/slick-codegen_2.12-3.3.0.pom"/>
+				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="slick-codegen_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15470" time="0" location="/Users/tozastation/.ivy2/cache/com.typesafe.slick/slick-codegen_2.12/srcs/slick-codegen_2.12-3.3.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.12/3.3.0/slick-codegen_2.12-3.3.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="io.grpc" name="grpc-all">
-			<revision name="1.19.0" status="release" pubdate="20190228041200" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+			<revision name="1.19.0" status="release" pubdate="20190228041200" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="26">
 				<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="3731" time="0" location="/Users/tozastation/.ivy2/cache/io.grpc/grpc-all/ivy-1.19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/grpc/grpc-all/1.19.0/grpc-all-1.19.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.19.0" rev-constraint-default="1.19.0" rev-constraint-dynamic="1.19.0" callerrev="0.1"/>
@@ -106,7 +118,7 @@
 			</revision>
 		</module>
 		<module organisation="io.grpc" name="grpc-testing">
-			<revision name="1.19.0" status="release" pubdate="20190228041324" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+			<revision name="1.19.0" status="release" pubdate="20190228041324" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
 				<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="3160" time="0" location="/Users/tozastation/.ivy2/cache/io.grpc/grpc-testing/ivy-1.19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/grpc/grpc-testing/1.19.0/grpc-testing-1.19.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.19.0" rev-constraint-default="1.19.0" rev-constraint-dynamic="1.19.0" callerrev="0.1"/>
@@ -118,7 +130,7 @@
 			</revision>
 		</module>
 		<module organisation="io.grpc" name="grpc-stub">
-			<revision name="1.19.0" status="release" pubdate="20190228041356" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+			<revision name="1.19.0" status="release" pubdate="20190228041356" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
 				<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="2624" time="0" location="/Users/tozastation/.ivy2/cache/io.grpc/grpc-stub/ivy-1.19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/grpc/grpc-stub/1.19.0/grpc-stub-1.19.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.19.0" rev-constraint-default="1.19.0" rev-constraint-dynamic="1.19.0" callerrev="0.1"/>
@@ -130,7 +142,7 @@
 			</revision>
 		</module>
 		<module organisation="io.grpc" name="grpc-protobuf-nano">
-			<revision name="1.19.0" status="release" pubdate="20190228041300" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+			<revision name="1.19.0" status="release" pubdate="20190228041300" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
 				<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="3341" time="0" location="/Users/tozastation/.ivy2/cache/io.grpc/grpc-protobuf-nano/ivy-1.19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/grpc/grpc-protobuf-nano/1.19.0/grpc-protobuf-nano-1.19.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.19.0" rev-constraint-default="1.19.0" rev-constraint-dynamic="1.19.0" callerrev="0.1"/>
@@ -142,7 +154,7 @@
 			</revision>
 		</module>
 		<module organisation="io.grpc" name="grpc-okhttp">
-			<revision name="1.19.0" status="release" pubdate="20190228041153" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+			<revision name="1.19.0" status="release" pubdate="20190228041153" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
 				<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="2915" time="0" location="/Users/tozastation/.ivy2/cache/io.grpc/grpc-okhttp/ivy-1.19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.19.0/grpc-okhttp-1.19.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.19.0" rev-constraint-default="1.19.0" rev-constraint-dynamic="1.19.0" callerrev="0.1"/>
@@ -154,7 +166,7 @@
 			</revision>
 		</module>
 		<module organisation="com.squareup.okio" name="okio">
-			<revision name="1.13.0" status="release" pubdate="20170513012419" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+			<revision name="1.13.0" status="release" pubdate="20170513012419" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4895" time="0" location="/Users/tozastation/.ivy2/cache/com.squareup.okio/okio/ivy-1.13.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/squareup/okio/okio/1.13.0/okio-1.13.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.13.0" rev-constraint-default="1.13.0" rev-constraint-dynamic="1.13.0" callerrev="0.1"/>
@@ -166,7 +178,7 @@
 			</revision>
 		</module>
 		<module organisation="com.squareup.okhttp" name="okhttp">
-			<revision name="2.5.0" status="release" pubdate="20150826101331" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+			<revision name="2.5.0" status="release" pubdate="20150826101331" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="5140" time="0" location="/Users/tozastation/.ivy2/cache/com.squareup.okhttp/okhttp/ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/squareup/okhttp/okhttp/2.5.0/okhttp-2.5.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="0.1"/>
@@ -178,7 +190,7 @@
 			</revision>
 		</module>
 		<module organisation="io.grpc" name="grpc-auth">
-			<revision name="1.19.0" status="release" pubdate="20190228041410" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+			<revision name="1.19.0" status="release" pubdate="20190228041410" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
 				<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="2789" time="0" location="/Users/tozastation/.ivy2/cache/io.grpc/grpc-auth/ivy-1.19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/grpc/grpc-auth/1.19.0/grpc-auth-1.19.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.19.0" rev-constraint-default="1.19.0" rev-constraint-dynamic="1.19.0" callerrev="0.1"/>
@@ -190,7 +202,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.scala-logging" name="scala-logging_2.12">
-			<revision name="3.9.2" status="release" pubdate="20181214031011" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/scala-logging" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="22">
+			<revision name="3.9.2" status="release" pubdate="20181214031011" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/scala-logging" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="24">
 				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3358" time="0" location="/Users/tozastation/.ivy2/cache/com.typesafe.scala-logging/scala-logging_2.12/ivy-3.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.12/3.9.2/scala-logging_2.12-3.9.2.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.9.2" rev-constraint-default="3.9.2" rev-constraint-dynamic="3.9.2" callerrev="0.1"/>
@@ -202,7 +214,7 @@
 			</revision>
 		</module>
 		<module organisation="ch.qos.logback" name="logback-classic">
-			<revision name="1.2.3" status="release" pubdate="20170401042753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="26">
+			<revision name="1.2.3" status="release" pubdate="20170401042753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="29">
 				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
 				<metadata-artifact status="no" details="" size="10412" time="0" location="/Users/tozastation/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom"/>
@@ -215,7 +227,7 @@
 			</revision>
 		</module>
 		<module organisation="ch.qos.logback" name="logback-core">
-			<revision name="1.2.3" status="release" pubdate="20170401042715" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+			<revision name="1.2.3" status="release" pubdate="20170401042715" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
 				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
 				<metadata-artifact status="no" details="" size="7917" time="0" location="/Users/tozastation/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom"/>
@@ -228,7 +240,7 @@
 			</revision>
 		</module>
 		<module organisation="com.pauldijou" name="jwt-core_2.12">
-			<revision name="2.1.0" status="release" pubdate="20190224195803" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pauldijou.fr/jwt-scala/" extra-info.apiURL="http://pauldijou.fr/jwt-scala/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+			<revision name="2.1.0" status="release" pubdate="20190224195803" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pauldijou.fr/jwt-scala/" extra-info.apiURL="http://pauldijou.fr/jwt-scala/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="22">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3178" time="0" location="/Users/tozastation/.ivy2/cache/com.pauldijou/jwt-core_2.12/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/pauldijou/jwt-core_2.12/2.1.0/jwt-core_2.12-2.1.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.1" extra-info.apiURL="http://pauldijou.fr/jwt-scala/api/"/>
@@ -240,7 +252,7 @@
 			</revision>
 		</module>
 		<module organisation="org.bouncycastle" name="bcpkix-jdk15on">
-			<revision name="1.60" status="release" pubdate="20180706092238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+			<revision name="1.60" status="release" pubdate="20180706092238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
 				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
 				<metadata-artifact status="no" details="" size="2927" time="0" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/ivy-1.60.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.60" rev-constraint-default="1.60" rev-constraint-dynamic="1.60" callerrev="0.1"/>
@@ -252,7 +264,7 @@
 			</revision>
 		</module>
 		<module organisation="org.bouncycastle" name="bcprov-jdk15on">
-			<revision name="1.60" status="release" pubdate="20180706091943" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+			<revision name="1.60" status="release" pubdate="20180706091943" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
 				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
 				<metadata-artifact status="no" details="" size="2676" time="0" location="/Users/tozastation/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/ivy-1.60.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.60" rev-constraint-default="1.60" rev-constraint-dynamic="1.60" callerrev="0.1"/>
@@ -264,7 +276,7 @@
 			</revision>
 		</module>
 		<module organisation="org.springframework.security" name="spring-security-core">
-			<revision name="5.1.4.RELEASE" status="release" pubdate="20190214025404" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spring.io/spring-security" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+			<revision name="5.1.4.RELEASE" status="release" pubdate="20190214025404" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spring.io/spring-security" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="6292" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework.security/spring-security-core/ivy-5.1.4.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/security/spring-security-core/5.1.4.RELEASE/spring-security-core-5.1.4.RELEASE.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="5.1.4.RELEASE" rev-constraint-default="5.1.4.RELEASE" rev-constraint-dynamic="5.1.4.RELEASE" callerrev="0.1"/>
@@ -276,7 +288,7 @@
 			</revision>
 		</module>
 		<module organisation="org.springframework" name="spring-context">
-			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152745" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152745" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="5272" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework/spring-context/ivy-5.1.5.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="5.1.5.RELEASE" rev-constraint-default="5.1.5.RELEASE" rev-constraint-dynamic="5.1.5.RELEASE" callerrev="0.1"/>
@@ -288,7 +300,7 @@
 			</revision>
 		</module>
 		<module organisation="org.springframework" name="spring-expression">
-			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152732" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152732" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2738" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework/spring-expression/ivy-5.1.5.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-expression/5.1.5.RELEASE/spring-expression-5.1.5.RELEASE.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="5.1.5.RELEASE" rev-constraint-default="5.1.5.RELEASE" rev-constraint-dynamic="5.1.5.RELEASE" callerrev="0.1"/>
@@ -300,7 +312,7 @@
 			</revision>
 		</module>
 		<module organisation="org.springframework" name="spring-aop">
-			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152728" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152728" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3230" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework/spring-aop/ivy-5.1.5.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="5.1.5.RELEASE" rev-constraint-default="5.1.5.RELEASE" rev-constraint-dynamic="5.1.5.RELEASE" callerrev="0.1"/>
@@ -312,7 +324,7 @@
 			</revision>
 		</module>
 		<module organisation="org.springframework" name="spring-beans">
-			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152723" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152723" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3341" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework/spring-beans/ivy-5.1.5.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="5.1.5.RELEASE" rev-constraint-default="5.1.5.RELEASE" rev-constraint-dynamic="5.1.5.RELEASE" callerrev="0.1"/>
@@ -324,7 +336,7 @@
 			</revision>
 		</module>
 		<module organisation="org.springframework" name="spring-core">
-			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152803" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152803" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3868" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework/spring-core/ivy-5.1.5.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="5.1.5.RELEASE" rev-constraint-default="5.1.5.RELEASE" rev-constraint-dynamic="5.1.5.RELEASE" callerrev="0.1"/>
@@ -336,13 +348,37 @@
 			</revision>
 		</module>
 		<module organisation="org.springframework" name="spring-jcl">
-			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152758" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+			<revision name="5.1.5.RELEASE" status="release" pubdate="20190213152758" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2816" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework/spring-jcl/ivy-5.1.5.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-jcl/5.1.5.RELEASE/spring-jcl-5.1.5.RELEASE.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="5.1.5.RELEASE" rev-constraint-default="5.1.5.RELEASE" rev-constraint-dynamic="5.1.5.RELEASE" callerrev="0.1"/>
 				<artifacts>
 					<artifact name="spring-jcl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="12567" time="0" location="/Users/tozastation/.ivy2/cache/org.springframework/spring-jcl/srcs/spring-jcl-5.1.5.RELEASE-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-jcl/5.1.5.RELEASE/spring-jcl-5.1.5.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.slick" name="slick-hikaricp_2.12">
+			<revision name="3.3.0" status="release" pubdate="20190131004937" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3036" time="0" location="/Users/tozastation/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/ivy-3.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick-hikaricp_2.12/3.3.0/slick-hikaricp_2.12-3.3.0.pom"/>
+				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="slick-hikaricp_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2236" time="0" location="/Users/tozastation/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/srcs/slick-hikaricp_2.12-3.3.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/slick/slick-hikaricp_2.12/3.3.0/slick-hikaricp_2.12-3.3.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.zaxxer" name="HikariCP">
+			<revision name="3.2.0" status="release" pubdate="20180530154537" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8024" time="0" location="/Users/tozastation/.ivy2/cache/com.zaxxer/HikariCP/ivy-3.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.pom"/>
+				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.2.0" rev-constraint-default="3.2.0" rev-constraint-dynamic="3.2.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="HikariCP" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="78830" time="0" location="/Users/tozastation/.ivy2/cache/com.zaxxer/HikariCP/srcs/HikariCP-3.2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -360,7 +396,7 @@
 			</revision>
 		</module>
 		<module organisation="io.grpc" name="grpc-protobuf-lite">
-			<revision name="1.19.0" status="release" pubdate="20190228041327" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+			<revision name="1.19.0" status="release" pubdate="20190228041327" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
 				<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="3324" time="0" location="/Users/tozastation/.ivy2/cache/io.grpc/grpc-protobuf-lite/ivy-1.19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/grpc/grpc-protobuf-lite/1.19.0/grpc-protobuf-lite-1.19.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.19.0" rev-constraint-default="1.19.0" rev-constraint-dynamic="1.19.0" callerrev="0.1"/>
@@ -372,7 +408,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.api.grpc" name="proto-google-common-protos">
-			<revision name="1.12.0" status="release" pubdate="20180629090723" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/googleapis/api-client-staging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+			<revision name="1.12.0" status="release" pubdate="20180629090723" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/googleapis/api-client-staging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2739" time="0" location="/Users/tozastation/.ivy2/cache/com.google.api.grpc/proto-google-common-protos/ivy-1.12.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/api/grpc/proto-google-common-protos/1.12.0/proto-google-common-protos-1.12.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.12.0" rev-constraint-default="1.12.0" rev-constraint-dynamic="1.12.0" callerrev="0.1"/>
@@ -396,7 +432,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.slick" name="slick_2.12">
-			<revision name="3.3.0" status="release" pubdate="20190131004945" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+			<revision name="3.3.0" status="release" pubdate="20190131004945" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="3">
 				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="3130" time="0" location="/Users/tozastation/.ivy2/cache/com.typesafe.slick/slick_2.12/ivy-3.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick_2.12/3.3.0/slick_2.12-3.3.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="0.1"/>
@@ -408,7 +444,7 @@
 			</revision>
 		</module>
 		<module organisation="org.reactivestreams" name="reactive-streams">
-			<revision name="1.0.2" status="release" pubdate="20171219050638" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+			<revision name="1.0.2" status="release" pubdate="20171219050638" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
 				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
 				<metadata-artifact status="no" details="" size="2523" time="0" location="/Users/tozastation/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.1"/>
@@ -420,7 +456,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="config">
-			<revision name="1.3.2" status="release" pubdate="20171006230218" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+			<revision name="1.3.2" status="release" pubdate="20171006230218" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2875" time="0" location="/Users/tozastation/.ivy2/cache/com.typesafe/config/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.2/config-1.3.2.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="0.1"/>
@@ -432,7 +468,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-api">
-			<revision name="1.7.25" status="release" pubdate="20170317013632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+			<revision name="1.7.25" status="release" pubdate="20170317013632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="5377" time="0" location="/Users/tozastation/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="0.1"/>
@@ -480,7 +516,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-handler-proxy">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129213456" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129213456" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="17467" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-handler-proxy/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-handler-proxy/4.1.32.Final/netty-handler-proxy-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -492,7 +528,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-codec-socks">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129213253" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129213253" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="16783" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-codec-socks/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec-socks/4.1.32.Final/netty-codec-socks-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -504,7 +540,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-codec-http2">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129212934" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129212934" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="17288" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-codec-http2/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec-http2/4.1.32.Final/netty-codec-http2-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -516,7 +552,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-codec-http">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129212759" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129212759" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="17143" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-codec-http/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.32.Final/netty-codec-http-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -528,7 +564,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-handler">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129212613" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129212613" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="18259" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-handler/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-handler/4.1.32.Final/netty-handler-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -540,7 +576,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-codec">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129212303" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129212303" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="18216" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-codec/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec/4.1.32.Final/netty-codec-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -552,7 +588,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.protobuf.nano" name="protobuf-javanano">
-			<revision name="3.0.0-alpha-5" status="release" pubdate="20160107081743" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://developers.google.com/protocol-buffers/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+			<revision name="3.0.0-alpha-5" status="release" pubdate="20160107081743" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://developers.google.com/protocol-buffers/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
 				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="3271" time="0" location="/Users/tozastation/.ivy2/cache/com.google.protobuf.nano/protobuf-javanano/ivy-3.0.0-alpha-5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/protobuf/nano/protobuf-javanano/3.0.0-alpha-5/protobuf-javanano-3.0.0-alpha-5.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.0.0-alpha-5" rev-constraint-default="3.0.0-alpha-5" rev-constraint-dynamic="3.0.0-alpha-5" callerrev="0.1"/>
@@ -564,7 +600,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-transport">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129212137" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129212137" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="17046" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-transport/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-transport/4.1.32.Final/netty-transport-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -576,7 +612,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-resolver">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129211907" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129211907" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="16895" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-resolver/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-resolver/4.1.32.Final/netty-resolver-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -588,7 +624,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-buffer">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129211753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129211753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="16889" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-buffer/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-buffer/4.1.32.Final/netty-buffer-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -600,7 +636,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-common">
-			<revision name="4.1.32.Final" status="release" pubdate="20181129211532" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+			<revision name="4.1.32.Final" status="release" pubdate="20181129211532" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="19413" time="0" location="/Users/tozastation/.ivy2/cache/io.netty/netty-common/ivy-4.1.32.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-common/4.1.32.Final/netty-common-4.1.32.Final.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.1.32.Final" rev-constraint-default="4.1.32.Final" rev-constraint-dynamic="4.1.32.Final" callerrev="0.1"/>
@@ -612,7 +648,7 @@
 			</revision>
 		</module>
 		<module organisation="io.grpc" name="grpc-core">
-			<revision name="1.19.0" status="release" pubdate="20190228041319" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+			<revision name="1.19.0" status="release" pubdate="20190228041319" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
 				<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="4730" time="0" location="/Users/tozastation/.ivy2/cache/io.grpc/grpc-core/ivy-1.19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/grpc/grpc-core/1.19.0/grpc-core-1.19.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.19.0" rev-constraint-default="1.19.0" rev-constraint-dynamic="1.19.0" callerrev="0.1"/>
@@ -624,7 +660,7 @@
 			</revision>
 		</module>
 		<module organisation="io.opencensus" name="opencensus-contrib-grpc-metrics">
-			<revision name="0.19.2" status="release" pubdate="20190207095949" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/census-instrumentation/opencensus-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+			<revision name="0.19.2" status="release" pubdate="20190207095949" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/census-instrumentation/opencensus-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
 				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3347" time="0" location="/Users/tozastation/.ivy2/cache/io.opencensus/opencensus-contrib-grpc-metrics/ivy-0.19.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/opencensus/opencensus-contrib-grpc-metrics/0.19.2/opencensus-contrib-grpc-metrics-0.19.2.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.19.2" rev-constraint-default="0.19.2" rev-constraint-dynamic="0.19.2" callerrev="0.1"/>
@@ -636,7 +672,7 @@
 			</revision>
 		</module>
 		<module organisation="io.opencensus" name="opencensus-api">
-			<revision name="0.19.2" status="release" pubdate="20190207095830" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/census-instrumentation/opencensus-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+			<revision name="0.19.2" status="release" pubdate="20190207095830" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/census-instrumentation/opencensus-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
 				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3158" time="0" location="/Users/tozastation/.ivy2/cache/io.opencensus/opencensus-api/ivy-0.19.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/opencensus/opencensus-api/0.19.2/opencensus-api-0.19.2.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.19.2" rev-constraint-default="0.19.2" rev-constraint-dynamic="0.19.2" callerrev="0.1"/>
@@ -648,7 +684,7 @@
 			</revision>
 		</module>
 		<module organisation="org.mockito" name="mockito-core">
-			<revision name="1.9.5" status="release" pubdate="20121014190649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mockito.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+			<revision name="1.9.5" status="release" pubdate="20121014190649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mockito.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
 				<license name="The MIT License" url="http://code.google.com/p/mockito/wiki/License"/>
 				<metadata-artifact status="no" details="" size="2794" time="0" location="/Users/tozastation/.ivy2/cache/org.mockito/mockito-core/ivy-1.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="0.1"/>
@@ -672,7 +708,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.guava" name="guava">
-			<revision name="26.0-android" status="release" pubdate="20180802064132" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+			<revision name="26.0-android" status="release" pubdate="20180802064132" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="6987" time="0" location="/Users/tozastation/.ivy2/cache/com.google.guava/guava/ivy-26.0-android.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/26.0-android/guava-26.0-android.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="26.0-android" rev-constraint-default="26.0-android" rev-constraint-dynamic="26.0-android" callerrev="0.1"/>
@@ -709,7 +745,7 @@
 			</revision>
 		</module>
 		<module organisation="org.codehaus.mojo" name="animal-sniffer-annotations">
-			<revision name="1.17" status="release" pubdate="20180622102035" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+			<revision name="1.17" status="release" pubdate="20180622102035" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
 				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="5135" time="0" location="/Users/tozastation/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/ivy-1.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.17" rev-constraint-default="1.17" rev-constraint-dynamic="1.17" callerrev="0.1"/>
@@ -721,7 +757,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.findbugs" name="jsr305">
-			<revision name="3.0.2" status="release" pubdate="20170331135548" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+			<revision name="3.0.2" status="release" pubdate="20170331135548" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3268" time="0" location="/Users/tozastation/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="0.1"/>
@@ -733,7 +769,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.errorprone" name="error_prone_annotations">
-			<revision name="2.2.0" status="release" pubdate="20180109082952" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+			<revision name="2.2.0" status="release" pubdate="20180109082952" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4105" time="0" location="/Users/tozastation/.ivy2/cache/com.google.errorprone/error_prone_annotations/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1"/>
@@ -745,7 +781,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.gson" name="gson">
-			<revision name="2.7" status="release" pubdate="20160615085554" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+			<revision name="2.7" status="release" pubdate="20160615085554" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3503" time="0" location="/Users/tozastation/.ivy2/cache/com.google.code.gson/gson/ivy-2.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.7" rev-constraint-default="2.7" rev-constraint-dynamic="2.7" callerrev="0.1"/>
@@ -757,7 +793,7 @@
 			</revision>
 		</module>
 		<module organisation="junit" name="junit">
-			<revision name="4.12" status="release" pubdate="20141205011743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+			<revision name="4.12" status="release" pubdate="20141205011743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
 				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<metadata-artifact status="no" details="" size="3317" time="0" location="/Users/tozastation/.ivy2/cache/junit/junit/ivy-4.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="0.1"/>
@@ -769,7 +805,7 @@
 			</revision>
 		</module>
 		<module organisation="org.hamcrest" name="hamcrest-core">
-			<revision name="1.3" status="release" pubdate="20120710060802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+			<revision name="1.3" status="release" pubdate="20120710060802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
 				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="2617" time="0" location="/Users/tozastation/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.1"/>
@@ -781,7 +817,7 @@
 			</revision>
 		</module>
 		<module organisation="io.grpc" name="grpc-context">
-			<revision name="1.19.0" status="release" pubdate="20190228041341" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+			<revision name="1.19.0" status="release" pubdate="20190228041341" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/grpc/grpc-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
 				<license name="Apache 2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="2464" time="0" location="/Users/tozastation/.ivy2/cache/io.grpc/grpc-context/ivy-1.19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/grpc/grpc-context/1.19.0/grpc-context-1.19.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.19.0" rev-constraint-default="1.19.0" rev-constraint-dynamic="1.19.0" callerrev="0.1"/>
@@ -805,7 +841,7 @@
 			</revision>
 		</module>
 		<module organisation="com.lihaoyi" name="fastparse-utils_2.12">
-			<revision name="1.0.0" status="release" pubdate="20171015063737" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/scala-parser" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+			<revision name="1.0.0" status="release" pubdate="20171015063737" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/scala-parser" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
 				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="3391" time="0" location="/Users/tozastation/.ivy2/cache/com.lihaoyi/fastparse-utils_2.12/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/fastparse-utils_2.12/1.0.0/fastparse-utils_2.12-1.0.0.pom"/>
 				<caller organisation="default" name="clasick_core_api$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1"/>

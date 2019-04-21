@@ -5,9 +5,12 @@
 
 package com.github.tozastation.clasickcoreapi.grpc.user_rpc
 
+/** *
+  * rpc : SignIn
+  */
 @SerialVersionUID(0L)
 final case class RequestSignIn(
-    userName: _root_.scala.Predef.String = "",
+    name: _root_.scala.Predef.String = "",
     password: _root_.scala.Predef.String = ""
     ) extends scalapb.GeneratedMessage with scalapb.Message[RequestSignIn] with scalapb.lenses.Updatable[RequestSignIn] {
     @transient
@@ -16,7 +19,7 @@ final case class RequestSignIn(
       var __size = 0
       
       {
-        val __value = userName
+        val __value = name
         if (__value != "") {
           __size += _root_.com.google.protobuf.CodedOutputStream.computeStringSize(1, __value)
         }
@@ -40,7 +43,7 @@ final case class RequestSignIn(
     }
     def writeTo(`_output__`: _root_.com.google.protobuf.CodedOutputStream): _root_.scala.Unit = {
       {
-        val __v = userName
+        val __v = name
         if (__v != "") {
           _output__.writeString(1, __v)
         }
@@ -53,7 +56,7 @@ final case class RequestSignIn(
       };
     }
     def mergeFrom(`_input__`: _root_.com.google.protobuf.CodedInputStream): com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn = {
-      var __userName = this.userName
+      var __name = this.name
       var __password = this.password
       var _done__ = false
       while (!_done__) {
@@ -61,23 +64,23 @@ final case class RequestSignIn(
         _tag__ match {
           case 0 => _done__ = true
           case 10 =>
-            __userName = _input__.readString()
+            __name = _input__.readString()
           case 18 =>
             __password = _input__.readString()
           case tag => _input__.skipField(tag)
         }
       }
       com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn(
-          userName = __userName,
+          name = __name,
           password = __password
       )
     }
-    def withUserName(__v: _root_.scala.Predef.String): RequestSignIn = copy(userName = __v)
+    def withName(__v: _root_.scala.Predef.String): RequestSignIn = copy(name = __v)
     def withPassword(__v: _root_.scala.Predef.String): RequestSignIn = copy(password = __v)
     def getFieldByNumber(__fieldNumber: _root_.scala.Int): _root_.scala.Any = {
       (__fieldNumber: @_root_.scala.unchecked) match {
         case 1 => {
-          val __t = userName
+          val __t = name
           if (__t != "") __t else null
         }
         case 2 => {
@@ -89,7 +92,7 @@ final case class RequestSignIn(
     def getField(__field: _root_.scalapb.descriptors.FieldDescriptor): _root_.scalapb.descriptors.PValue = {
       _root_.scala.Predef.require(__field.containingMessage eq companion.scalaDescriptor)
       (__field.number: @_root_.scala.unchecked) match {
-        case 1 => _root_.scalapb.descriptors.PString(userName)
+        case 1 => _root_.scalapb.descriptors.PString(name)
         case 2 => _root_.scalapb.descriptors.PString(password)
       }
     }
@@ -101,12 +104,12 @@ object RequestSignIn extends scalapb.GeneratedMessageCompanion[com.github.tozast
   implicit def messageCompanion: scalapb.GeneratedMessageCompanion[com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn] with scalapb.JavaProtoSupport[com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn, com.github.tozastation.clasickcoreapi.grpc.RequestSignIn] = this
   def toJavaProto(scalaPbSource: com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn): com.github.tozastation.clasickcoreapi.grpc.RequestSignIn = {
     val javaPbOut = com.github.tozastation.clasickcoreapi.grpc.RequestSignIn.newBuilder
-    javaPbOut.setUserName(scalaPbSource.userName)
+    javaPbOut.setName(scalaPbSource.name)
     javaPbOut.setPassword(scalaPbSource.password)
     javaPbOut.build
   }
   def fromJavaProto(javaPbSource: com.github.tozastation.clasickcoreapi.grpc.RequestSignIn): com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn = com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn(
-    userName = javaPbSource.getUserName,
+    name = javaPbSource.getName,
     password = javaPbSource.getPassword
   )
   def fromFieldsMap(__fieldsMap: scala.collection.immutable.Map[_root_.com.google.protobuf.Descriptors.FieldDescriptor, _root_.scala.Any]): com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn = {
@@ -134,16 +137,16 @@ object RequestSignIn extends scalapb.GeneratedMessageCompanion[com.github.tozast
   lazy val defaultInstance = com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn(
   )
   implicit class RequestSignInLens[UpperPB](_l: _root_.scalapb.lenses.Lens[UpperPB, com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn]) extends _root_.scalapb.lenses.ObjectLens[UpperPB, com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn](_l) {
-    def userName: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.userName)((c_, f_) => c_.copy(userName = f_))
+    def name: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.name)((c_, f_) => c_.copy(name = f_))
     def password: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.password)((c_, f_) => c_.copy(password = f_))
   }
-  final val USER_NAME_FIELD_NUMBER = 1
+  final val NAME_FIELD_NUMBER = 1
   final val PASSWORD_FIELD_NUMBER = 2
   def of(
-    userName: _root_.scala.Predef.String,
+    name: _root_.scala.Predef.String,
     password: _root_.scala.Predef.String
   ): _root_.com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn = _root_.com.github.tozastation.clasickcoreapi.grpc.user_rpc.RequestSignIn(
-    userName,
+    name,
     password
   )
 }

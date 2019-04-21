@@ -5,3 +5,8 @@ sbt-version
 about
 compile
 exit
+run
+compile
+run
+compile
+run

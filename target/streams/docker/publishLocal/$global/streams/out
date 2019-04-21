@@ -1,0 +1,32 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t tozastation/clasick-core-api:1.0 .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/docker/stage[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  43.89MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/17 : FROM openjdk:latest as stage0[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 831a029b6add[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/17 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 699f9177100b[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/17 : COPY opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> c1203b0cf8f3[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/17 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 755cd2a7a903[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/17 : RUN ["chmod", "-R", "u=rX,g=rX", "/opt/docker"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> ca7ec7e1950a[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/17 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/clasick_core_api"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> d9d6de25bad4[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 7/17 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/server"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 64f073cc9cd6[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 8/17 : FROM openjdk:latest[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 831a029b6add[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 9/17 : LABEL MAINTAINER="tozastation <b1016031@fun.ac.jp>"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 2e7605d3b8be[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 10/17 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 136a2dfd98c2[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 11/17 : RUN id -u demiourgos728 2> /dev/null || useradd --system --create-home --uid 1001 --gid 0 demiourgos728[0m

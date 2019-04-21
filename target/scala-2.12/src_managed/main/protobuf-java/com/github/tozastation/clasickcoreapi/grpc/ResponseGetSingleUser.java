@@ -16,7 +16,6 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private ResponseGetSingleUser() {
-    result_ = 0;
   }
 
   @java.lang.Override
@@ -54,12 +53,6 @@ private static final long serialVersionUID = 0L;
               user_ = subBuilder.buildPartial();
             }
 
-            break;
-          }
-          case 16: {
-            int rawValue = input.readEnum();
-
-            result_ = rawValue;
             break;
           }
           default: {
@@ -115,23 +108,6 @@ private static final long serialVersionUID = 0L;
     return getUser();
   }
 
-  public static final int RESULT_FIELD_NUMBER = 2;
-  private int result_;
-  /**
-   * <code>.user.Result result = 2;</code>
-   */
-  public int getResultValue() {
-    return result_;
-  }
-  /**
-   * <code>.user.Result result = 2;</code>
-   */
-  public com.github.tozastation.clasickcoreapi.grpc.Result getResult() {
-    @SuppressWarnings("deprecation")
-    com.github.tozastation.clasickcoreapi.grpc.Result result = com.github.tozastation.clasickcoreapi.grpc.Result.valueOf(result_);
-    return result == null ? com.github.tozastation.clasickcoreapi.grpc.Result.UNRECOGNIZED : result;
-  }
-
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -149,9 +125,6 @@ private static final long serialVersionUID = 0L;
     if (user_ != null) {
       output.writeMessage(1, getUser());
     }
-    if (result_ != com.github.tozastation.clasickcoreapi.grpc.Result.SUCCESS.getNumber()) {
-      output.writeEnum(2, result_);
-    }
     unknownFields.writeTo(output);
   }
 
@@ -164,10 +137,6 @@ private static final long serialVersionUID = 0L;
     if (user_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, getUser());
-    }
-    if (result_ != com.github.tozastation.clasickcoreapi.grpc.Result.SUCCESS.getNumber()) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, result_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -190,7 +159,6 @@ private static final long serialVersionUID = 0L;
       result = result && getUser()
           .equals(other.getUser());
     }
-    result = result && result_ == other.result_;
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -206,8 +174,6 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + USER_FIELD_NUMBER;
       hash = (53 * hash) + getUser().hashCode();
     }
-    hash = (37 * hash) + RESULT_FIELD_NUMBER;
-    hash = (53 * hash) + result_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -347,8 +313,6 @@ private static final long serialVersionUID = 0L;
         user_ = null;
         userBuilder_ = null;
       }
-      result_ = 0;
-
       return this;
     }
 
@@ -380,7 +344,6 @@ private static final long serialVersionUID = 0L;
       } else {
         result.user_ = userBuilder_.build();
       }
-      result.result_ = result_;
       onBuilt();
       return result;
     }
@@ -431,9 +394,6 @@ private static final long serialVersionUID = 0L;
       if (other == com.github.tozastation.clasickcoreapi.grpc.ResponseGetSingleUser.getDefaultInstance()) return this;
       if (other.hasUser()) {
         mergeUser(other.getUser());
-      }
-      if (other.result_ != 0) {
-        setResultValue(other.getResultValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -579,51 +539,6 @@ private static final long serialVersionUID = 0L;
         user_ = null;
       }
       return userBuilder_;
-    }
-
-    private int result_ = 0;
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public int getResultValue() {
-      return result_;
-    }
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public Builder setResultValue(int value) {
-      result_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public com.github.tozastation.clasickcoreapi.grpc.Result getResult() {
-      @SuppressWarnings("deprecation")
-      com.github.tozastation.clasickcoreapi.grpc.Result result = com.github.tozastation.clasickcoreapi.grpc.Result.valueOf(result_);
-      return result == null ? com.github.tozastation.clasickcoreapi.grpc.Result.UNRECOGNIZED : result;
-    }
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public Builder setResult(com.github.tozastation.clasickcoreapi.grpc.Result value) {
-      if (value == null) {
-        throw new NullPointerException();
-      }
-      
-      result_ = value.getNumber();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.user.Result result = 2;</code>
-     */
-    public Builder clearResult() {
-      
-      result_ = 0;
-      onChanged();
-      return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

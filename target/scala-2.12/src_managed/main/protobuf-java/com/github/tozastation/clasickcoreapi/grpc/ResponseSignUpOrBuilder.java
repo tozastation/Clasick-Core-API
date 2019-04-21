@@ -16,13 +16,4 @@ public interface ResponseSignUpOrBuilder extends
    */
   com.google.protobuf.ByteString
       getAccessTokenBytes();
-
-  /**
-   * <code>.user.Result result = 2;</code>
-   */
-  int getResultValue();
-  /**
-   * <code>.user.Result result = 2;</code>
-   */
-  com.github.tozastation.clasickcoreapi.grpc.Result getResult();
 }

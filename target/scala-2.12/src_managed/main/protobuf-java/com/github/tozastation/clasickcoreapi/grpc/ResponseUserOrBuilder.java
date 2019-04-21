@@ -21,4 +21,24 @@ public interface ResponseUserOrBuilder extends
    */
   com.google.protobuf.ByteString
       getUserNameBytes();
+
+  /**
+   * <code>string icon_path = 3;</code>
+   */
+  java.lang.String getIconPath();
+  /**
+   * <code>string icon_path = 3;</code>
+   */
+  com.google.protobuf.ByteString
+      getIconPathBytes();
+
+  /**
+   * <code>string introduction = 4;</code>
+   */
+  java.lang.String getIntroduction();
+  /**
+   * <code>string introduction = 4;</code>
+   */
+  com.google.protobuf.ByteString
+      getIntroductionBytes();
 }

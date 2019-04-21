@@ -4,6 +4,11 @@
 package com.github.tozastation.clasickcoreapi.grpc;
 
 /**
+ * <pre>
+ **
+ * rpc : SignUp
+ * </pre>
+ *
  * Protobuf type {@code user.RequestSignUp}
  */
 public  final class RequestSignUp extends
@@ -16,9 +21,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private RequestSignUp() {
-    userName_ = "";
+    name_ = "";
     password_ = "";
-    result_ = 0;
   }
 
   @java.lang.Override
@@ -48,7 +52,7 @@ private static final long serialVersionUID = 0L;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            userName_ = s;
+            name_ = s;
             break;
           }
           case 18: {
@@ -57,10 +61,17 @@ private static final long serialVersionUID = 0L;
             password_ = s;
             break;
           }
-          case 24: {
-            int rawValue = input.readEnum();
+          case 26: {
+            com.github.tozastation.clasickcoreapi.grpc.Contact.Builder subBuilder = null;
+            if (contact_ != null) {
+              subBuilder = contact_.toBuilder();
+            }
+            contact_ = input.readMessage(com.github.tozastation.clasickcoreapi.grpc.Contact.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(contact_);
+              contact_ = subBuilder.buildPartial();
+            }
 
-            result_ = rawValue;
             break;
           }
           default: {
@@ -95,34 +106,34 @@ private static final long serialVersionUID = 0L;
             com.github.tozastation.clasickcoreapi.grpc.RequestSignUp.class, com.github.tozastation.clasickcoreapi.grpc.RequestSignUp.Builder.class);
   }
 
-  public static final int USER_NAME_FIELD_NUMBER = 1;
-  private volatile java.lang.Object userName_;
+  public static final int NAME_FIELD_NUMBER = 1;
+  private volatile java.lang.Object name_;
   /**
-   * <code>string user_name = 1;</code>
+   * <code>string name = 1;</code>
    */
-  public java.lang.String getUserName() {
-    java.lang.Object ref = userName_;
+  public java.lang.String getName() {
+    java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      userName_ = s;
+      name_ = s;
       return s;
     }
   }
   /**
-   * <code>string user_name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getUserNameBytes() {
-    java.lang.Object ref = userName_;
+      getNameBytes() {
+    java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      userName_ = b;
+      name_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -163,21 +174,25 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int RESULT_FIELD_NUMBER = 3;
-  private int result_;
+  public static final int CONTACT_FIELD_NUMBER = 3;
+  private com.github.tozastation.clasickcoreapi.grpc.Contact contact_;
   /**
-   * <code>.user.Result result = 3;</code>
+   * <code>.user.Contact contact = 3;</code>
    */
-  public int getResultValue() {
-    return result_;
+  public boolean hasContact() {
+    return contact_ != null;
   }
   /**
-   * <code>.user.Result result = 3;</code>
+   * <code>.user.Contact contact = 3;</code>
    */
-  public com.github.tozastation.clasickcoreapi.grpc.Result getResult() {
-    @SuppressWarnings("deprecation")
-    com.github.tozastation.clasickcoreapi.grpc.Result result = com.github.tozastation.clasickcoreapi.grpc.Result.valueOf(result_);
-    return result == null ? com.github.tozastation.clasickcoreapi.grpc.Result.UNRECOGNIZED : result;
+  public com.github.tozastation.clasickcoreapi.grpc.Contact getContact() {
+    return contact_ == null ? com.github.tozastation.clasickcoreapi.grpc.Contact.getDefaultInstance() : contact_;
+  }
+  /**
+   * <code>.user.Contact contact = 3;</code>
+   */
+  public com.github.tozastation.clasickcoreapi.grpc.ContactOrBuilder getContactOrBuilder() {
+    return getContact();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -194,14 +209,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getUserNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, userName_);
+    if (!getNameBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
     }
     if (!getPasswordBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, password_);
     }
-    if (result_ != com.github.tozastation.clasickcoreapi.grpc.Result.SUCCESS.getNumber()) {
-      output.writeEnum(3, result_);
+    if (contact_ != null) {
+      output.writeMessage(3, getContact());
     }
     unknownFields.writeTo(output);
   }
@@ -212,15 +227,15 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getUserNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, userName_);
+    if (!getNameBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
     }
     if (!getPasswordBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, password_);
     }
-    if (result_ != com.github.tozastation.clasickcoreapi.grpc.Result.SUCCESS.getNumber()) {
+    if (contact_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(3, result_);
+        .computeMessageSize(3, getContact());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -238,11 +253,15 @@ private static final long serialVersionUID = 0L;
     com.github.tozastation.clasickcoreapi.grpc.RequestSignUp other = (com.github.tozastation.clasickcoreapi.grpc.RequestSignUp) obj;
 
     boolean result = true;
-    result = result && getUserName()
-        .equals(other.getUserName());
+    result = result && getName()
+        .equals(other.getName());
     result = result && getPassword()
         .equals(other.getPassword());
-    result = result && result_ == other.result_;
+    result = result && (hasContact() == other.hasContact());
+    if (hasContact()) {
+      result = result && getContact()
+          .equals(other.getContact());
+    }
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -254,12 +273,14 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + USER_NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getUserName().hashCode();
+    hash = (37 * hash) + NAME_FIELD_NUMBER;
+    hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + PASSWORD_FIELD_NUMBER;
     hash = (53 * hash) + getPassword().hashCode();
-    hash = (37 * hash) + RESULT_FIELD_NUMBER;
-    hash = (53 * hash) + result_;
+    if (hasContact()) {
+      hash = (37 * hash) + CONTACT_FIELD_NUMBER;
+      hash = (53 * hash) + getContact().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -356,6 +377,11 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
+   * <pre>
+   **
+   * rpc : SignUp
+   * </pre>
+   *
    * Protobuf type {@code user.RequestSignUp}
    */
   public static final class Builder extends
@@ -393,12 +419,16 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      userName_ = "";
+      name_ = "";
 
       password_ = "";
 
-      result_ = 0;
-
+      if (contactBuilder_ == null) {
+        contact_ = null;
+      } else {
+        contact_ = null;
+        contactBuilder_ = null;
+      }
       return this;
     }
 
@@ -425,9 +455,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.github.tozastation.clasickcoreapi.grpc.RequestSignUp buildPartial() {
       com.github.tozastation.clasickcoreapi.grpc.RequestSignUp result = new com.github.tozastation.clasickcoreapi.grpc.RequestSignUp(this);
-      result.userName_ = userName_;
+      result.name_ = name_;
       result.password_ = password_;
-      result.result_ = result_;
+      if (contactBuilder_ == null) {
+        result.contact_ = contact_;
+      } else {
+        result.contact_ = contactBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -476,16 +510,16 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(com.github.tozastation.clasickcoreapi.grpc.RequestSignUp other) {
       if (other == com.github.tozastation.clasickcoreapi.grpc.RequestSignUp.getDefaultInstance()) return this;
-      if (!other.getUserName().isEmpty()) {
-        userName_ = other.userName_;
+      if (!other.getName().isEmpty()) {
+        name_ = other.name_;
         onChanged();
       }
       if (!other.getPassword().isEmpty()) {
         password_ = other.password_;
         onChanged();
       }
-      if (other.result_ != 0) {
-        setResultValue(other.getResultValue());
+      if (other.hasContact()) {
+        mergeContact(other.getContact());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -516,71 +550,71 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object userName_ = "";
+    private java.lang.Object name_ = "";
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
-    public java.lang.String getUserName() {
-      java.lang.Object ref = userName_;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        userName_ = s;
+        name_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getUserNameBytes() {
-      java.lang.Object ref = userName_;
+        getNameBytes() {
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        userName_ = b;
+        name_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
-    public Builder setUserName(
+    public Builder setName(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      userName_ = value;
+      name_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
-    public Builder clearUserName() {
+    public Builder clearName() {
       
-      userName_ = getDefaultInstance().getUserName();
+      name_ = getDefaultInstance().getName();
       onChanged();
       return this;
     }
     /**
-     * <code>string user_name = 1;</code>
+     * <code>string name = 1;</code>
      */
-    public Builder setUserNameBytes(
+    public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      userName_ = value;
+      name_ = value;
       onChanged();
       return this;
     }
@@ -654,49 +688,121 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int result_ = 0;
+    private com.github.tozastation.clasickcoreapi.grpc.Contact contact_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.github.tozastation.clasickcoreapi.grpc.Contact, com.github.tozastation.clasickcoreapi.grpc.Contact.Builder, com.github.tozastation.clasickcoreapi.grpc.ContactOrBuilder> contactBuilder_;
     /**
-     * <code>.user.Result result = 3;</code>
+     * <code>.user.Contact contact = 3;</code>
      */
-    public int getResultValue() {
-      return result_;
+    public boolean hasContact() {
+      return contactBuilder_ != null || contact_ != null;
     }
     /**
-     * <code>.user.Result result = 3;</code>
+     * <code>.user.Contact contact = 3;</code>
      */
-    public Builder setResultValue(int value) {
-      result_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>.user.Result result = 3;</code>
-     */
-    public com.github.tozastation.clasickcoreapi.grpc.Result getResult() {
-      @SuppressWarnings("deprecation")
-      com.github.tozastation.clasickcoreapi.grpc.Result result = com.github.tozastation.clasickcoreapi.grpc.Result.valueOf(result_);
-      return result == null ? com.github.tozastation.clasickcoreapi.grpc.Result.UNRECOGNIZED : result;
-    }
-    /**
-     * <code>.user.Result result = 3;</code>
-     */
-    public Builder setResult(com.github.tozastation.clasickcoreapi.grpc.Result value) {
-      if (value == null) {
-        throw new NullPointerException();
+    public com.github.tozastation.clasickcoreapi.grpc.Contact getContact() {
+      if (contactBuilder_ == null) {
+        return contact_ == null ? com.github.tozastation.clasickcoreapi.grpc.Contact.getDefaultInstance() : contact_;
+      } else {
+        return contactBuilder_.getMessage();
       }
-      
-      result_ = value.getNumber();
-      onChanged();
+    }
+    /**
+     * <code>.user.Contact contact = 3;</code>
+     */
+    public Builder setContact(com.github.tozastation.clasickcoreapi.grpc.Contact value) {
+      if (contactBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        contact_ = value;
+        onChanged();
+      } else {
+        contactBuilder_.setMessage(value);
+      }
+
       return this;
     }
     /**
-     * <code>.user.Result result = 3;</code>
+     * <code>.user.Contact contact = 3;</code>
      */
-    public Builder clearResult() {
-      
-      result_ = 0;
-      onChanged();
+    public Builder setContact(
+        com.github.tozastation.clasickcoreapi.grpc.Contact.Builder builderForValue) {
+      if (contactBuilder_ == null) {
+        contact_ = builderForValue.build();
+        onChanged();
+      } else {
+        contactBuilder_.setMessage(builderForValue.build());
+      }
+
       return this;
+    }
+    /**
+     * <code>.user.Contact contact = 3;</code>
+     */
+    public Builder mergeContact(com.github.tozastation.clasickcoreapi.grpc.Contact value) {
+      if (contactBuilder_ == null) {
+        if (contact_ != null) {
+          contact_ =
+            com.github.tozastation.clasickcoreapi.grpc.Contact.newBuilder(contact_).mergeFrom(value).buildPartial();
+        } else {
+          contact_ = value;
+        }
+        onChanged();
+      } else {
+        contactBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.user.Contact contact = 3;</code>
+     */
+    public Builder clearContact() {
+      if (contactBuilder_ == null) {
+        contact_ = null;
+        onChanged();
+      } else {
+        contact_ = null;
+        contactBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.user.Contact contact = 3;</code>
+     */
+    public com.github.tozastation.clasickcoreapi.grpc.Contact.Builder getContactBuilder() {
+      
+      onChanged();
+      return getContactFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.user.Contact contact = 3;</code>
+     */
+    public com.github.tozastation.clasickcoreapi.grpc.ContactOrBuilder getContactOrBuilder() {
+      if (contactBuilder_ != null) {
+        return contactBuilder_.getMessageOrBuilder();
+      } else {
+        return contact_ == null ?
+            com.github.tozastation.clasickcoreapi.grpc.Contact.getDefaultInstance() : contact_;
+      }
+    }
+    /**
+     * <code>.user.Contact contact = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.github.tozastation.clasickcoreapi.grpc.Contact, com.github.tozastation.clasickcoreapi.grpc.Contact.Builder, com.github.tozastation.clasickcoreapi.grpc.ContactOrBuilder> 
+        getContactFieldBuilder() {
+      if (contactBuilder_ == null) {
+        contactBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.github.tozastation.clasickcoreapi.grpc.Contact, com.github.tozastation.clasickcoreapi.grpc.Contact.Builder, com.github.tozastation.clasickcoreapi.grpc.ContactOrBuilder>(
+                getContact(),
+                getParentForChildren(),
+                isClean());
+        contact_ = null;
+      }
+      return contactBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
