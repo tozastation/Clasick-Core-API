@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="windows"
 		confs="compile, runtime, test, provided, optional, protobuf, universal, universal-docs, universal-src, docker, windows, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190421133755"/>
+		date="20190421150347"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

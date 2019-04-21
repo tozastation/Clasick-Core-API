@@ -33,9 +33,10 @@ enablePlugins(DockerPlugin)
 // Dockerfileに書く内容
 packageName in Docker := "clasick-core-api"
 version in Docker := "1.0"
-mainClass in Compile := Some("com.github.tozastation.clasickcoreapi.Server")
+mainClass in Compile := Some("com.github.tozastation.clasickcoreapi.CoreAPIServer")
 dockerRepository := Some("tozastation")
 maintainer in Docker := "tozastation <b1016031@fun.ac.jp>"
 dockerExposedPorts := List(8080)
 dockerBaseImage := "openjdk:latest"
 dockerCmd := Nil
+dockerEntrypoint := List("bin/clasick_core_api")

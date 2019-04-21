@@ -1,32 +1,54 @@
 [0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t tozastation/clasick-core-api:1.0 .[0m
 [0m[[0m[0mdebug[0m] [0m[0mWorking directory /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/docker/stage[0m
 [0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  43.89MB[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 1/17 : FROM openjdk:latest as stage0[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/16 : FROM openjdk:latest as stage0[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> 831a029b6add[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 2/17 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/16 : WORKDIR /opt/docker[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> 699f9177100b[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 3/17 : COPY opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/16 : COPY opt /opt[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> c1203b0cf8f3[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 4/17 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> a7eaae95f1cf[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/16 : USER root[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 755cd2a7a903[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 5/17 : RUN ["chmod", "-R", "u=rX,g=rX", "/opt/docker"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> f8788d0a29a3[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/16 : RUN ["chmod", "-R", "u=rX,g=rX", "/opt/docker"][0m
 [0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> ca7ec7e1950a[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 6/17 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/clasick_core_api"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 972c6ac4e619[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/16 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/clasick_core_api"][0m
 [0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> d9d6de25bad4[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 7/17 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/server"][0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 64f073cc9cd6[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 8/17 : FROM openjdk:latest[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> e7d827d1e0f4[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 7/16 : FROM openjdk:latest[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> 831a029b6add[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 9/17 : LABEL MAINTAINER="tozastation <b1016031@fun.ac.jp>"[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 8/16 : LABEL MAINTAINER="tozastation <b1016031@fun.ac.jp>"[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> 2e7605d3b8be[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 10/17 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 9/16 : USER root[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> 136a2dfd98c2[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 11/17 : RUN id -u demiourgos728 2> /dev/null || useradd --system --create-home --uid 1001 --gid 0 demiourgos728[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 10/16 : RUN id -u demiourgos728 2> /dev/null || useradd --system --create-home --uid 1001 --gid 0 demiourgos728[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> d19832708c08[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 11/16 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 3dc470ca3578[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 12/16 : COPY --from=stage0 --chown=demiourgos728:root /opt/docker /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> cde32d0d44b4[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 13/16 : EXPOSE 8080[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 043895903037[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 14/16 : USER 1001[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> c7d67529de54[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 15/16 : ENTRYPOINT ["bin/clasick_core_api"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 0aed78a49de9[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 0aed78a49de9[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> a9fcf2ce8ac0[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 16/16 : CMD [][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 9f61841e7fa5[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 9f61841e7fa5[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> c6fe0505e1d8[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built c6fe0505e1d8[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged tozastation/clasick-core-api:1.0[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image tozastation/clasick-core-api with tags [1.0][0m

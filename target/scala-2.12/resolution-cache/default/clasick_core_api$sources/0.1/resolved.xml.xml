@@ -4,7 +4,7 @@
 		module="clasick_core_api$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190421133755"
+		publication="20190421150347"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

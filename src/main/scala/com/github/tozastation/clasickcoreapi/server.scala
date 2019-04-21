@@ -8,7 +8,7 @@ import com.github.tozastation.clasickcoreapi.application.UserApplicationImpl
 import com.github.tozastation.clasickcoreapi.grpc.user_rpc.UserRpcGrpc
 import com.github.tozastation.clasickcoreapi.interface.util.util
 
-object server extends App {
+object CoreAPIServer extends App {
   private val executionContext: ExecutionContext = ExecutionContext.fromExecutor(Executors.newCachedThreadPool())
 
   private def start(): Unit = {
