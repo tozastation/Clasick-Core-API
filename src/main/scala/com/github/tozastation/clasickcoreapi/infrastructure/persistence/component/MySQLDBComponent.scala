@@ -34,7 +34,7 @@ private object MySQLDBConnector {
 
 }
 
-object InitDB {
+class InitDB {
   private val config = ConfigFactory.load("database.conf")
   config.checkValid(ConfigFactory.defaultReference(), "slick.mysql")
   private val db = Database.forConfig("slick.mysql", config)

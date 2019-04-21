@@ -1,94 +1,32 @@
-[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t clasick_core_api:0.1 .[0m
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t tozastation/clasick-core-api:1.0 .[0m
 [0m[[0m[0mdebug[0m] [0m[0mWorking directory /Users/tozastation/go/src/github.com/tozastation/clasick_core_api/target/docker/stage[0m
-[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  43.01MB[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 1/14 : FROM openjdk:8 as stage0[0m
-[0m[[0m[0minfo[0m] [0m[0m8: Pulling from library/openjdk[0m
-[0m[[0m[0minfo[0m] [0m[0me79bb959ec00: Pulling fs layer[0m
-[0m[[0m[0minfo[0m] [0m[0md4b7902036fe: Pulling fs layer[0m
-[0m[[0m[0minfo[0m] [0m[0m1b2a72d4e030: Pulling fs layer[0m
-[0m[[0m[0minfo[0m] [0m[0md54db43011fd: Pulling fs layer[0m
-[0m[[0m[0minfo[0m] [0m[0m1a97c78dad71: Pulling fs layer[0m
-[0m[[0m[0minfo[0m] [0m[0m6dcb79eeeda4: Pulling fs layer[0m
-[0m[[0m[0minfo[0m] [0m[0mbd56246cf4fd: Pulling fs layer[0m
-[0m[[0m[0minfo[0m] [0m[0m88cea60f56c5: Pulling fs layer[0m
-[0m[[0m[0minfo[0m] [0m[0md54db43011fd: Waiting[0m
-[0m[[0m[0minfo[0m] [0m[0m1a97c78dad71: Waiting[0m
-[0m[[0m[0minfo[0m] [0m[0m6dcb79eeeda4: Waiting[0m
-[0m[[0m[0minfo[0m] [0m[0mbd56246cf4fd: Waiting[0m
-[0m[[0m[0minfo[0m] [0m[0m88cea60f56c5: Waiting[0m
-[0m[[0m[0minfo[0m] [0m[0m1b2a72d4e030: Verifying Checksum[0m
-[0m[[0m[0minfo[0m] [0m[0m1b2a72d4e030: Download complete[0m
-[0m[[0m[0minfo[0m] [0m[0md4b7902036fe: Verifying Checksum[0m
-[0m[[0m[0minfo[0m] [0m[0md4b7902036fe: Download complete[0m
-[0m[[0m[0minfo[0m] [0m[0m1a97c78dad71: Verifying Checksum[0m
-[0m[[0m[0minfo[0m] [0m[0m1a97c78dad71: Download complete[0m
-[0m[[0m[0minfo[0m] [0m[0m6dcb79eeeda4: Verifying Checksum[0m
-[0m[[0m[0minfo[0m] [0m[0m6dcb79eeeda4: Download complete[0m
-[0m[[0m[0minfo[0m] [0m[0me79bb959ec00: Verifying Checksum[0m
-[0m[[0m[0minfo[0m] [0m[0me79bb959ec00: Download complete[0m
-[0m[[0m[0minfo[0m] [0m[0mbd56246cf4fd: Verifying Checksum[0m
-[0m[[0m[0minfo[0m] [0m[0mbd56246cf4fd: Download complete[0m
-[0m[[0m[0minfo[0m] [0m[0me79bb959ec00: Pull complete[0m
-[0m[[0m[0minfo[0m] [0m[0md54db43011fd: Verifying Checksum[0m
-[0m[[0m[0minfo[0m] [0m[0md54db43011fd: Download complete[0m
-[0m[[0m[0minfo[0m] [0m[0md4b7902036fe: Pull complete[0m
-[0m[[0m[0minfo[0m] [0m[0m1b2a72d4e030: Pull complete[0m
-[0m[[0m[0minfo[0m] [0m[0md54db43011fd: Pull complete[0m
-[0m[[0m[0minfo[0m] [0m[0m1a97c78dad71: Pull complete[0m
-[0m[[0m[0minfo[0m] [0m[0m6dcb79eeeda4: Pull complete[0m
-[0m[[0m[0minfo[0m] [0m[0mbd56246cf4fd: Pull complete[0m
-[0m[[0m[0minfo[0m] [0m[0m88cea60f56c5: Verifying Checksum[0m
-[0m[[0m[0minfo[0m] [0m[0m88cea60f56c5: Download complete[0m
-[0m[[0m[0minfo[0m] [0m[0m88cea60f56c5: Pull complete[0m
-[0m[[0m[0minfo[0m] [0m[0mDigest: sha256:96331221311fc8db41436b3ec3f7606e44ba1d28e2a7910f9f8883e8afce9fa2[0m
-[0m[[0m[0minfo[0m] [0m[0mStatus: Downloaded newer image for openjdk:8[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> b8d3f94869bb[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 2/14 : WORKDIR /opt/docker[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in e9d2f2c84280[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container e9d2f2c84280[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 50c947ff2008[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 3/14 : COPY opt /opt[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 3b10c29c5887[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 4/14 : USER root[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in d6af7fe6ee17[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container d6af7fe6ee17[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> be7b6064cb5b[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 5/14 : RUN ["chmod", "-R", "u=rX,g=rX", "/opt/docker"][0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 4b003bd7d9c5[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 4b003bd7d9c5[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 0475a601ff5c[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 6/14 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/clasick_core_api"][0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 3e5042bc24a3[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 3e5042bc24a3[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 468a4213cf99[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 7/14 : FROM openjdk:8[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> b8d3f94869bb[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 8/14 : USER root[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 6f7498814d2e[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 6f7498814d2e[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 46954f0cfa4f[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 9/14 : RUN id -u demiourgos728 2> /dev/null || useradd --system --create-home --uid 1001 --gid 0 demiourgos728[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in da7476883f9e[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container da7476883f9e[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 87aab0e918a0[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 10/14 : WORKDIR /opt/docker[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 96ffaca8d413[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 96ffaca8d413[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> feeed2ce4eed[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 11/14 : COPY --from=stage0 --chown=demiourgos728:root /opt/docker /opt/docker[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> aa7181bfebd9[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 12/14 : USER 1001[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 9bff434a6f20[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 9bff434a6f20[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 08c3fa71486a[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 13/14 : ENTRYPOINT ["/opt/docker/bin/clasick_core_api"][0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in f45f5bfdb9e6[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container f45f5bfdb9e6[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 5f68ce3c6071[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 14/14 : CMD [][0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 56aa2216cc5d[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 56aa2216cc5d[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 818c853f4403[0m
-[0m[[0m[0minfo[0m] [0m[0mSuccessfully built 818c853f4403[0m
-[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged clasick_core_api:0.1[0m
-[0m[[0m[0minfo[0m] [0m[0mBuilt image clasick_core_api with tags [0.1][0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  43.89MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/17 : FROM openjdk:latest as stage0[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 831a029b6add[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/17 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 699f9177100b[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/17 : COPY opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> c1203b0cf8f3[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/17 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 755cd2a7a903[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/17 : RUN ["chmod", "-R", "u=rX,g=rX", "/opt/docker"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> ca7ec7e1950a[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/17 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/clasick_core_api"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> d9d6de25bad4[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 7/17 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/server"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 64f073cc9cd6[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 8/17 : FROM openjdk:latest[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 831a029b6add[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 9/17 : LABEL MAINTAINER="tozastation <b1016031@fun.ac.jp>"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 2e7605d3b8be[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 10/17 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 136a2dfd98c2[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 11/17 : RUN id -u demiourgos728 2> /dev/null || useradd --system --create-home --uid 1001 --gid 0 demiourgos728[0m
