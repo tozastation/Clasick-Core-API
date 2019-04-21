@@ -12,7 +12,7 @@ spec:
       labels:
         app: core-api
     spec:
-      initContainers:
+      containers:
         - name: cloud-proxy
           image: b.gcr.io/cloudsql-docker/gce-proxy:latest
           command: ["/cloud_sql_proxy", "--dir=/cloudsql",
@@ -24,9 +24,8 @@ spec:
               readOnly: true
             - name: cloudsql
               mountPath: /cloudsql
-      containers:
         - name: core-api
-          image: gcr.io/tozastation/github.com/tozastation/clasick-core-api:99fc1d13bfee8a6182156db60eba8fee49d21043
+          image: gcr.io/tozastation/github.com/tozastation/clasick-core-api:094f96e4a9bb79da654af1bfa8e65dae875c78d1
           ports:
             - containerPort: 8080
       volumes:
