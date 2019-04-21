@@ -21,7 +21,7 @@ object CoreAPIServer extends App {
 
 class GrpcServer(executionContext: ExecutionContext) extends util {
   self =>
-  private val port = sys.env.getOrElse("SERVER_PORT", "50051").toInt
+  private val port = sys.env.getOrElse("SERVER_PORT", "8080").toInt
   private var server: Server = _
 
   def start(): Unit = {
