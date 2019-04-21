@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: core-api
+spec:
+  selector:
+    matchLabels:
+      app: core-api
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: core-api
+    spec:
+      containers:
+        - name: core-api
+          image: gcr.io/tozastation/github.com/tozastation/clasick-core-api:938d19ae2840e0348e0278545b3955c78f6664a7
+          ports:
+            - containerPort: 8080
+        - name: cloud-proxy
+          image: b.gcr.io/cloudsql-docker/gce-proxy:latest
+          command: ["/cloud_sql_proxy", "--dir=/cloudsql",
+                      "-instances=tozastation:asia-east1:clasick-dev:clasick=tcp:0.0.0.0:3306",
+                      "-credential_file=/secrets/cloudsql/credentials.json"]
+          volumeMounts:
+            - name: cloudsql-oauth-credentials
+              mountPath: /secrets/cloudsql
+              readOnly: true
+            - name: cloudsql
+              mountPath: /cloudsql
+      volumes:
+        - name: cloudsql-oauth-credentials
+          secret:
+            secretName: cloudsql-oauth-credentials
+        - name: cloudsql
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: core-api
+  name: core-api-service
+spec:
+  type: LoadBalancer
+  ports:
+    - name: core-api
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: core-api

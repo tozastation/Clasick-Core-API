@@ -14,5 +14,5 @@ WORKDIR /opt/docker
 COPY --from=stage0 --chown=demiourgos728:root /opt/docker /opt/docker
 EXPOSE 8080
 USER 1001
-ENTRYPOINT ["/opt/docker/bin/clasick_core_api"]
+ENTRYPOINT ["/opt/docker/bin/server"]
 CMD []
